@@ -1,0 +1,25 @@
+</div>
+<footer id="footer">
+	<div class="footer-media">
+		<p id="follow">
+			Follow Dropphase
+			<a class="media-link" href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebok"></a>
+			<a class="media-link" href="https://www.twitter.com/"><img src="./images/twitter.png" alt="Twitter"></a>
+			<a class="media-link" href="https://www.linkedin.com/"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+			<a class="media-link" href="https://www.plus.google.com/"><img src="./images/gplus.png" alt="Google Plus"></a>
+		</p>
+	</div>
+	<div class="footer-sitemap">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="puppets.html">Puppet Info</a></li>
+			<li><a href="browse.html">Browse Puppets</a></li>
+			<li><a href="faq.html">FAQ</a></li>
+			<li><a href="support.html">Support</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><div class="copyright">&copy; 2015 Dropphase Ltd.</div></li>
+		</ul>
+	</div>
+</footer>
+</body>
+</html>

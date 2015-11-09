@@ -1,0 +1,441 @@
+html {
+    overflow-y: scroll;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, "Helvetica-Neue", serif, sans-serif;
+    background: #5AA9EF;
+}
+
+/********************************************
+HEADER CSS
+*********************************************/
+#header {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #ffb854;
+    z-index: 10;
+}
+
+#logo {
+    position: absolute;
+    top: 15%;
+    height: 50%;
+    left: 20%;
+    width: auto;
+}
+
+#navbar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.headerBig {
+    height: 100% !important;;
+}
+
+.logoBig {
+    top: 25% !important;;
+    height: 25% !important;;
+}
+
+.navbarBig {
+    height: 5% !important;;
+    bottom: 40% !important;;
+}
+
+.headerResize {
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.logoResize {
+    transition: height 1s, top 1s .25s;
+    -o-transition: height 1s, top 1s .25s;
+    -moz-transition: height 1s, top 1s .25s;
+    -webkit-transition: height 1s, top 1s .25s;
+}
+
+.navbarResize {
+    transition: all 1s;
+    -o-transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar a:visited, #navbar a {
+    color: black;
+}
+
+.navbuttons {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 2%;
+    position: relative;
+    background: #ffdb54;
+    height: 100%;
+    width: 10%;
+}
+
+.navbuttons:last-of-type {
+    margin: 0 !important;
+}
+
+.navbuttons a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbuttons p {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.navbuttons:hover {
+    background-color: #6b5c20;
+}
+
+#dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#dropdown li {
+    background: #ffdb54;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+#puppetInfo:hover #dropdown {
+    display: block;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar a:visited, #navbar a {
+    color: black;
+}
+
+#dropdown li:hover {
+    background: #6b5c20;
+}
+
+/********************************************
+FOOTER CSS
+*********************************************/
+
+#footer {
+    bottom: 0px;
+    z-index: 0;
+    position: relative;
+    font-family: Helvetica, "Helvetica-Neue", serif, sans-serif, "Comic Sans MS";
+    padding: 20px 0 0 0;
+}
+
+#footer-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer a {
+    text-decoration: none;
+    z-index: 1;
+
+}
+
+#footer ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#footer li {
+    float: left;
+    margin-right: 20px;
+}
+
+#footer li:first-child {
+    margin-left: 20%;
+}
+
+#footer li:last-child {
+    float: right;
+}
+
+#footer li a {
+    color: #888888;
+}
+
+#footer li a:hover {
+    color: #484848;
+}
+
+#footer .copyright, #footer li a {
+    color: #888888;
+}
+
+.footer-media, .footer-sitemap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-sitemap {
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 10px;
+}
+
+.footer-media {
+    background-color: rgb(200, 200, 200);
+}
+
+#follow {
+    color: #484848;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.media-link {
+    margin-left: 40px;
+    z-index: 1;
+
+}
+
+.media-link img {
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+}
+
+/********************************************
+WRAPPER
+*********************************************/
+
+#wrapper {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/********************************************
+INDEX CSS
+*********************************************/
+
+.mainPageSections {
+    border: 1px solid black;
+    padding: 10px;
+    height: 250px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.sectionHeader {
+    margin: 0;
+}
+
+.sectionParagraph {
+    width: 50%;
+}
+
+#topSection:after {
+    background-color: #6B4C20;
+    background-image: url("./images/indexTopSectionBackground.png");
+    background-repeat: repeat;
+    background-position: 0 50%;
+    background-size: 50%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+
+#middleSection:after {
+    background-color: #6B4C20;
+    background-image: url("./images/R2D2-feature-1.png");
+    background-repeat: repeat;
+    background-position: 0 10%;
+    background-size: 100%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+
+#bottomSection:after {
+    background-color: white;
+    background-image: url("./images/Muppets-Kermit.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 50%;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+
+/********************************************
+BROWSE CSS
+*********************************************/
+
+#puppetInfo:hover #dropdown {
+    display: block;
+}
+
+.puppetDiv {
+    background: #4089CB;
+    position: relative;
+    border: 1px solid black;
+    min-width: 400px;
+    transition: all .25s;
+    -o-transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-transition: all .25s;
+}
+
+.puppetDiv:hover {
+    background: rgba(107, 49, 32, 0.1);
+}
+
+.puppetDiv:hover .puppetButton {
+    display: inline-block;
+}
+
+.nameAndType, .puppetPrice, .puppetSummary, .puppetDescription, .puppetButton {
+    position: absolute;
+}
+
+.nameAndType, .puppetPrice, .puppetSummary {
+    display: inline-block;
+}
+
+.puppetImage {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    display: inline;
+    transition: all .25s;
+    -o-transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-transition: all .25s;
+}
+
+.nameAndType {
+    top: 0;
+    margin: 10px;
+}
+
+.puppetName, .puppetType {
+    margin: 0;
+    position: relative;
+}
+
+.puppetType:first-letter {
+    text-transform: capitalize;
+}
+
+.puppetPrice {
+    right: 0;
+    margin: 10px;
+}
+
+.puppetSummary {
+    bottom: 0;
+    margin: 10px;
+    padding-bottom: 10px;
+    max-width: 60%;
+    max-height: 30%;
+    overflow: auto;
+}
+
+.puppetButton {
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    display: none;
+}
+
+.puppetDescription {
+    display: none;
+}
+
+.puppetDivLoaded {
+
+}
+
+.puppetImageLoaded {
+    height: 200px;
+    width: 200px;
+}
+
+.puppetSummaryLoaded {
+    display: none !important;
+}
+
+.puppetDescriptionLoaded {
+    display: inline-block !important;
+    bottom: 0;
+    margin: 10px;
+    padding-bottom: 10px;
+    max-width: 50%;
+    max-height: 50%;
+    overflow: hidden;
+}
+
+.puppetButtonLoaded {
+    display: none !important;
+}
+
+.hidden {
+    display: none !important;
+}

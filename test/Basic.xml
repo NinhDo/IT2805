@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE puppets [
+		<!ELEMENT puppets (puppet)*>
+		<!ELEMENT puppet (id, img, name, size, price, summary, description)>
+		<!ATTLIST puppet type CDATA #REQUIRED>
+		<!ELEMENT id (#PCDATA)>
+		<!ELEMENT img (#PCDATA)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT size (#PCDATA)>
+		<!ELEMENT price (#PCDATA)>
+		<!ELEMENT summary (#PCDATA)>
+		<!ELEMENT description (#PCDATA)>
+		]>
+<puppets>
+	<puppet type="marionette">
+		<id>MR0001</id>
+		<img>pinochio.png</img>
+		<name>Pinochio</name>
+		<size>Medium</size>
+		<price>€13.5</price>
+		<summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum lacinia justo, ac gravida lectus mattis hendrerit. Integer at dignissim.</summary>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum libero nec ex pharetra cursus. Donec in urna quis velit cursus vestibulum quis in enim. Praesent vestibulum sit amet velit ut pretium. Sed efficitur congue varius. Mauris malesuada et sem ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ante, tincidunt eu augue in, pellentesque pellentesque massa. Sed mauris ligula, vestibulum sit amet eleifend at, auctor quis sapien. Proin commodo mauris et sollicitudin dapibus. Mauris eu eleifend mi, sit amet consequat enim. Sed hendrerit nisi ut orci gravida congue.</description>
+	</puppet>
+	<puppet type="handPuppet">
+		<id>HP0001</id>
+		<img>walter.png</img>
+		<name>Walter</name>
+		<size>Medium</size>
+		<price>€130.5</price>
+		<summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum lacinia justo, ac gravida lectus mattis hendrerit. Integer at dignissim.</summary>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum libero nec ex pharetra cursus. Donec in urna quis velit cursus vestibulum quis in enim. Praesent vestibulum sit amet velit ut pretium. Sed efficitur congue varius. Mauris malesuada et sem ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ante, tincidunt eu augue in, pellentesque pellentesque massa. Sed mauris ligula, vestibulum sit amet eleifend at, auctor quis sapien. Proin commodo mauris et sollicitudin dapibus. Mauris eu eleifend mi, sit amet consequat enim. Sed hendrerit nisi ut orci gravida congue.</description>
+	</puppet>
+	<puppet type="handPuppet">
+		<id>HP0002</id>
+		<img>hank.png</img>
+		<name>Hank</name>
+		<size>Medium</size>
+		<price>€100.5</price>
+		<summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum lacinia justo, ac gravida lectus mattis hendrerit. Integer at dignissim.m</summary>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum libero nec ex pharetra cursus. Donec in urna quis velit cursus vestibulum quis in enim. Praesent vestibulum sit amet velit ut pretium. Sed efficitur congue varius. Mauris malesuada et sem ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ante, tincidunt eu augue in, pellentesque pellentesque massa. Sed mauris ligula, vestibulum sit amet eleifend at, auctor quis sapien. Proin commodo mauris et sollicitudin dapibus. Mauris eu eleifend mi, sit amet consequat enim. Sed hendrerit nisi ut orci gravida congue.</description>
+	</puppet>
+	<puppet type="handPuppet">
+		<id>HP0003</id>
+		<img>brian.png</img>
+		<name>Brian</name>
+		<size>Medium</size>
+		<price>€16.5</price>
+		<summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum lacinia justo, ac gravida lectus mattis hendrerit. Integer at dignissim.</summary>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum libero nec ex pharetra cursus. Donec in urna quis velit cursus vestibulum quis in enim. Praesent vestibulum sit amet velit ut pretium. Sed efficitur congue varius. Mauris malesuada et sem ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ante, tincidunt eu augue in, pellentesque pellentesque massa. Sed mauris ligula, vestibulum sit amet eleifend at, auctor quis sapien. Proin commodo mauris et sollicitudin dapibus. Mauris eu eleifend mi, sit amet consequat enim. Sed hendrerit nisi ut orci gravida congue.</description>
+	</puppet>
+	<puppet type="marionette">
+		<id>MR0005</id>
+		<img>woody.png</img>
+		<name>Woody</name>
+		<size>Huge</size>
+		<price>€1300.5</price>
+		<summary>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum lacinia justo, ac gravida lectus mattis hendrerit. Integer at dignissim.</summary>
+		<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum libero nec ex pharetra cursus. Donec in urna quis velit cursus vestibulum quis in enim. Praesent vestibulum sit amet velit ut pretium. Sed efficitur congue varius. Mauris malesuada et sem ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit ante, tincidunt eu augue in, pellentesque pellentesque massa. Sed mauris ligula, vestibulum sit amet eleifend at, auctor quis sapien. Proin commodo mauris et sollicitudin dapibus. Mauris eu eleifend mi, sit amet consequat enim. Sed hendrerit nisi ut orci gravida congue.</description>
+	</puppet>
+</puppets>

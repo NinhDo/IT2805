@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 2.5% 0;
+}
+#wrapper {
+	position: relative;
+	width: 70%;
+	margin: auto;
+}
+
+#wrapper div {
+	border: 1px solid black;
+	padding: 20px;
+	margin: 5px;
+}
+
+#baseInfo {
+	border: none!Important;
+}
+.subject {
+	
+}
+
+.subjectInfo {
+	
+}
+
+#folderStructure {
+    max-width: 500px;
+    padding: 20px 40px;
+    border: 1px solid black;
+}
+
+#deadlineTable th {
+    font-size: 2em;
+}
+
+#deadlineTable td {
+    padding: 2px 10px 2px 5px;
+}
+
+#deadlineTable, #deadlineTable td, #deadlineTable th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}

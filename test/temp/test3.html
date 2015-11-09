@@ -1,0 +1,42 @@
+<script src = "expand.js"></script>
+<script src = "filter.js"></script>
+<script src = "fetch.js"></script>
+<form id="searchBar" onsubmit="return false">
+    <div class="search">
+        <input id="searchField" onkeypress="if(event.keyCode == 13) search();"/>
+        <button type="button" id="submitSrc" onclick="search()">Submit</button>
+    </div>
+    <input type="checkbox" id="marionette" onclick="if(this.checked || !this.checked){ search(); }"><label for="marionette">Marionette</label>
+    <input type="checkbox" id="handPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="handPuppet">Hand Puppet</label>
+    <input type="checkbox" id="shadowPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="shadowPuppet">Shadow Puppet</label>
+    <input type="checkbox" id="rodPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="rodPuppet">Rod Puppet</label>
+    <input type="checkbox" id="ventriloquist" onclick="if(this.checked || !this.checked){ search(); }"><label for="ventriloquist">Ventriloquist</label>
+    <input type="checkbox" id="animatronic" onclick="if(this.checked || !this.checked){ search(); }"><label for="animatronic">Animatronic</label>
+</form>
+<div id="content">
+</div>
+<div id="notContent">
+
+    <div class = "puppetDiv">
+        <img class = "puppetImage" src = "" alt = "blank"/>
+        <div class = "nameAndType">
+            <h3 class = "puppetName">Puppet Name</h3>
+            <p class = "puppetType marionette">marionette</p>
+        </div>
+        <p class = "puppetPrice">?100,000,000.00</p>
+        <p class = "puppetSummary">This is a very long summary. Once upon a time, there was a summary. He wanted to do something. The End.</p>
+        <p class = "puppetDescription">longer description</p>
+        <button class = "puppetButton" type="button" onclick="">See more!</button>
+    </div>
+    <div class = "puppetDiv puppetDivLoaded">
+        <img class = "puppetImage puppetImageLoaded" src = "" alt = "blank"/>
+        <div class = "nameAndType">
+            <h3 class = "puppetName puppetNameLoaded">Puppet Name</h3>
+            <p class = "puppetType marionette puppetTypeLoaded">marionette</p>
+        </div>
+        <p class = "puppetPrice puppetPriceLoaded">?100,000,000,000.00</p>
+        <p class = "puppetSummary puppetSummaryLoaded">This is a very long summary. Once upon a time, there was a summary. He wanted to do something. The End.</p>
+        <p class = "puppetDescription puppetDescriptionLoaded">This is a much longer description. It will contain a lot of text sometimes. Sometimes, it is just like the summary, because we couldn't make anything up for this. But who cares. This text fits just right. Happy little description placeholder.</p>
+        <button class = "puppetButton puppetButtonLoaded" type = "button" onclick = "expand">See more!</button>
+    </div>
+</div>

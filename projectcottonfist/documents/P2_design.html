@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>P2 - Design</title>
+	<link href="/ninhqd/projectcottonfist/documents/p1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="baseInfo">
+		<h1>1. P2 Design</h1>
+		<h2>Mathias, Ninh, Nithun, og Simen</h2>
+		<h5>October 12, 2015.</h5>
+	</div>
+	<div id="client">
+		<h3 class="subject">2. Client</h3>
+		<p class="subjectInfo">Client name and contact person: Dropphase Ltd, represented by Cottonfist, Gunnar<br/>Mr. Cottonfist is the CEO and Manager of Dropphase Ltd, and wishes to transition his business from a telephone service to an online service. Dropphase has been a local German company for many years, and now they wish to expand to the global market using Mr. Cottonfists many years of experience from the German puppeteering industry. Dropphase is a professional puppet rental service, providing puppets of any form and shape to any purpose necessary.</p>
+	</div>
+	<div id="purpose">
+		<h3 class="subject">3. Purpose, goals, and audience</h3>
+		<p class="subjectInfo">Mr. Cottonfist has achieved great success in his telephone services, but feels the growth has stagnated in recent years. Therefore, he wishes to expand to an internet service and take advantage of technological progress in order to make his business grow internationally.<br/>Specifically, the goals he wants finished in the duration of this project is to have sections of puppets divided on how they function (sock puppets, hand puppets, animatronics, etc.), an about section where the clients may learn more about Mr. Cottonfist and his credibility, and an FAQ, where general questions regarding the company and/or details about the dolls.<br/>The last goal he wants is to implement an ordering system, however in this project he only wants the visuals, and therefore not anything with the back-end yet.<br/>The target audience will be enthusiasts, theaters, schools and students,  and prop artists who need inspiration and reference on how puppets look like and work mechanically. </p>
+	</div>
+	<div id="navigationStructure">
+		<h3 class="subject">4. Navigation Structure</h3>
+		<p class="subjectInfo">Our navigation section will consist of a main navigation bar located on the header area of the site and a basic sitemap in the footer section. Both the header and footer will be the same in all of the pages, connecting them like a web. This is to make it easier for the user to navigate from one part of the site to the other. Some of the site will also have linear structure, like from puppet info to browse puppet, to make the browsing experience seamless.<br/><br/>The main navigation bar will link to the following sites:<br/>Puppet Info | Browse  | Support | FAQ  | About<br/><br/>On puppet info we will be adding a minimalistic drop-down menu when the user is hovering over the puppet info that links to the sub-puppet info pages to reduce navigation clicks (“NavClicks”).To navigate deeper into the website the user will use links located in the respective pages.Sitemap will have a direct link to the basic pages in our web site, nothing real exciting.</p>
+		<img src="/ninhqd/projectcottonfist/documents/images/sitemap.svg" alt="image of sitemap">
+	</div>
+	<div id="pageLayout">
+		<h3 class="subject">5. Page layout and Appearance</h3>
+		<p class="subjectInfo">Since Dropphase ltd. is a relative unknown company (some might say imaginary) and their livelihood is depending on sales it is critical that the general design isn’t distracting and efficient. After Mr. Gunnars wishes are we keeping the universal design clean and professional as possible.<br/>On the top of the page you will find a header that will consist of the company logo and the main navigation bar. As the user tends to favor the left (<a href="http://www.nngroup.com/articles/horizontal-attention-leans-left/">source</a>) side we want the navigation bar to start with the sites that leads to revenue, in order Puppet info, Browse, Support, FAQ, About. The reasoning that we are putting Puppet info before Browse, is that if the user doesn't experience a drop-down button on the first nav bar, there is no expectation that there will be on the others, thus making an accidental “NavClick” if it isn’t expected.<br/></p>
+            <img src="/ninhqd/projectcottonfist/documents/images/mockup.svg" alt="basic site mockup"><p class="subjectInfo"></p></å><strong>Font-Type</strong>:</p>
+			<ul>
+				<li>Logo: Coolvetica, this will be made as a .png/.svg file so the font won’t differ on the user experience</li>
+				<li>Body: Helvetica. We are using standard fonts on the body, to make the overall design available to most of the browsers, and avoid lack of fonts.</li>
+			</ul>
+		<p class="subjectInfo"><strong>Color:</strong> The color theme has not yet decided upon as it is in disagreement between client and us. Since he wants neon yellow, cyan and pink color pallet, we are trying to get him to compromise, but at the current time we gave not been successful.<br/><br/><strong>Social Media buttons:</strong> We are going to put the Social media button and the bottom right of the footer section, and in about, (NB! Since this is an imaginary company these buttons will link to the respective main sites.)</p>
+	</div>
+	<div id="content">
+		<h3 class="subject">6. Content</h3>
+		<p class="subjectInfo"><strong>Main page</strong><br/>The purpose of the main page is to introduce the user to Dropphase as a company and the services provided by them. The page will also inform the user about the different subsites with links to them.The very first time you visit the website you will get a splash page which will show the logo of Dropphase and the navbar covering the screen. By focusing on these two things it will be easier to navigate the website, and it will be clear what the website is all about. As the user scrolls down the splash screen will be condensed into the header and navbar for our website, and the user will see the main page. There the user will be introduced to the services of Dropphase, and get a more detailed look at the different subpages. By pressing any of the sections the user will be taken to the top and the corresponding part of the navbar expands.<br/><br/>
+		<strong>Puppet info</strong><br/>
+The purpose of the puppet info page is to expand the users understanding of puppeteering and the different puppets provided by Dropphase. 
+These different types will be split into boxes (html div elements) containing , and by pressing them the boxes will provide additional information and a link to the “browse puppets” subpage with the correlating filter for the puppet category. 
+Example: If you click on the sock puppet section you will be redirected to the “browse puppets” subpage with the filter for sock puppets already checked out.<br/><br/>
+		<strong>Browse puppets</strong><br/>
+The purpose of the browse puppet” page is to show the user the wide variety of different puppets provided by Dropphase. It also important that the user will be able to quickly find the right puppet for the right situation.<br/>On the page where you browse the puppets available for rent the user will be able to filter different categories and search for the desired puppet. All this will be placed on the left side of the page while the focus will be on the right, where the puppets will be represented by an appropriate thumbnail, description and price. We will be using separate XML and JavaScript files to get information about the puppets.<br/><br/>
+		<strong>About</strong><br/>
+The purpose of the about page is to give the user a complete history of Dropphase and Gunnar Cottonfist, with an honourable mention to the creators of the stupendous website that is being used.<br/>
+The website will have bodies of text and accompanying pictures of Mr. Cottonfist.<br/><br/>
+		<strong>Support page</strong><br/>
+The purpose of the support page is to give the user ways to contact Dropphase and thereby use their services or get necessary support.
+The website will have contact information for Dropphase with links to their social media. To make it clear which sites we are using, there will be logos acting as buttons.<br/><br/>
+		<strong>FAQ</strong><br/>
+The purpose of the frequently asked questions page is to give the users answers to the most common questions.
+The page will focus on answering possible problems that the user might have, and giving insightful facts about puppeteering and Mr. Cottonfist.
+		</p>
+	</div>
+	<div id="minReq"> 
+		<h3 class="subject">7. Minimum Requirements</h3>
+		<p class="subjectInfo">We currently have 5 JavaScripts we wish to implement to the site. The workload is therefore split up like this:<br/>
+			Mathias and Ninh will write and implement:</p>
+		<ol>
+			<li>
+A script which loops pulls information (thumbnail URL, name, description, and price) from an external XML file, and inserts it into the appropriate place. The reason we do this is because we have a plethora of inventory, and do not wish to create way too many html files that are almost identical. In addition, we do not have the ability to connect the site to a database and pull information from there. The script will function in the Browse Puppets section (browse.html), and will pull relevant info for each puppet.</li>
+			<li>A script which handles search and filters for the first script. That way, the consumer is able to look at all of the puppets related to the search or the filter. The script will either refresh the entire page, or run actively and remove dynamically. It is also possible that this script is combined with the script above to reduce the workload of the page (avoid fetching everything and then filter out what’s not needed)</li>
+			<li>A script that handles the transition from the splash screen to the Main Page (index.html). The script will condense the logo and shortcuts into the headers logo and navbar respectively. It is possible we will implement jQuery here, however, jQuery does not, as far as we know, condense the information, but only hides it</li>
+		</ol>
+		<p class="subjectInfo">
+			Nithun and Simen will write and implement:</p>
+		<ol>
+			<li>A script which expands DIVs. This is for both the Main Page (index.html) and Puppet Info (puppets.html), as they contain expandable boxes that contain info. The DIVs will expand to a certain width and height, revealing additional information, and a larger image. There will also  be a close button to minimize the DIV</li>
+			<li>A Scripts that stitches the header, content, and footer. This script will be on each page because every page needs it, however, due to the splash screen transition, it is possible this need to be “dormant” in a sense, until the splash screen disappears.</li>
+		</ol>
+	</div>
+	<div id="plan">
+		<h3 class="subject">8. Plan</h3>
+		<p class="subjectInfo"><strong>Organizational Scheme</strong><br/>All of the files will be stored under the folder projectcottonfist. Because we don’t have a private server, we will use the public server provided for us by NTNU, specifically here: <a href="http://folk.ntnu.no/ninhqd/projectcottonfist/">http://folk.ntnu.no/ninhqd/projectcottonfist/</a><br/><br/>List of files and folders</p>
+		<ul id="folderStructure">
+			<li>index.html</li>
+			<li>browse.html</li>
+			<li>puppets.html</li>
+			<li>support.html</li>
+			<li>faq.html</li>
+			<li>about.html</li>
+			<li>header.html</li>
+			<li>footer.html</li>
+			<li>productlisting.xml</li>
+			<li>images/<ul>
+				<li>companylogo.png</li>
+				<li>companylogo.svg</li>
+				<li>companylogowithslogan.png</li>
+				<li>companylogowithslogan.svg</li>
+				<li>companyslogan.png</li>
+				<li>companyslogan.svg</li>
+				<li>thumbnail_1.jpg</li>
+				<li>thumbnail_2.jpg</li>
+				<li>…</li>
+				<li>thumbnail_x.jpg</li>
+				<li>twitter.jpg</li>
+				<li>facebook.jpg</li>
+				<li>googleplus.jpg</li>
+				</ul></li>
+			<li>scripts/<ul>
+				<li>splash.js</li>
+				<li>stitch.js</li>
+				<li>expand.js (possible merge with fetch.js)</li>
+				<li>fetch.js (see above)</li>
+				<li>filter.js</li>
+				</ul></li>
+			<li>stylesheet.css</li>
+			</ul>
+		<table id="deadlineTable">
+            <thead>
+                <tr>
+                    <th colspan="4">Work divisions and Deadlines</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Filname</td>
+                    <td>Description</td>
+                    <td>In charge</td>
+                    <td>Deadline (DD.MM.YYYY)</td>
+                </tr>
+                <tr>
+                    <td>index.html</td>
+                    <td>Homepage</td>
+                    <td>Ninh</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>browse.html</td>
+                    <td>Puppet libary with search</td>
+                    <td>Mathias</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>puppets.html</td>
+                    <td>Info section about puppet types</td>
+                    <td>Nithun</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>support.html</td>
+                    <td>Support page</td>
+                    <td>Simen</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>faq.html</td>
+                    <td>FAQ page</td>
+                    <td>Simen</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>about.html</td>
+                    <td>About page</td>
+                    <td>Simen</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>header.html</td>
+                    <td>Universal header</td>
+                    <td>Mathias</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>footer.html</td>
+                    <td>Universal fotter</td>
+                    <td>Nithun</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>productlisting.xml</td>
+                    <td>XML with all info about puppets</td>
+                    <td>Mathias</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>images</td>
+                    <td>images</td>
+                    <td>Ninh</td>
+                    <td>19.10.2015</td>
+                </tr>
+                <tr>
+                    <td>splash.js</td>
+                    <td>Mainpage slpash script</td>
+                    <td>Mathias and Ninh</td>
+                    <td>26.10.2015</td>
+                </tr>
+                <tr>
+                    <td>stitch.js</td>
+                    <td>Stitching header, content, and footer</td>
+                    <td>Nithun and Simen</td>
+                    <td>26.10.2015</td>
+                </tr>
+                <tr>
+                    <td>expand.js</td>
+                    <td>Expands divs</td>
+                    <td>Nithun and Simen</td>
+                    <td>26.10.2015</td>
+                </tr>
+                <tr>
+                    <td>fetch.js</td>
+                    <td>Fetching data from XML</td>
+                    <td>Mathias and Ninh</td>
+                    <td>26.10.2015</td>
+                </tr>
+                <tr>
+                    <td>filter.js</td>
+                    <td>Filter search for browse.html</td>
+                    <td>Mathias and Ninh</td>
+                    <td>26.10.2015</td>
+                </tr>
+                <tr>
+                    <td>stylesheet.css</td>
+                    <td>General css file</td>
+                    <td>Everyone</td>
+                    <td>04.10.2015</td>
+                </tr>
+                <tr>
+                    <td>finnshing_touch.coolstuff</td>
+                    <td></td>
+                    <td>Everyone</td>
+                    <td>10.11.2015</td>
+                </tr>
+            </tbody>
+		</table>
+	</div>
+</div>	
+</body>
+</html>
