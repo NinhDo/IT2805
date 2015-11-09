@@ -18,7 +18,7 @@ function search() {
         p = document.getElementById("searchBar").children[1],
         typesWanted = [],
         content = document.getElementById("content");
-    for (var i = 1; i < p.length; i++) {
+    for (var i = 0; i < p.children.length; i++) {
         if (p.children[i].children[0].checked) {
             typesWanted.push(p.children[i].children[0].id);
         }
