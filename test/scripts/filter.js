@@ -70,7 +70,7 @@ function hideAll(){
 
 function showAll(){
     var content = document.getElementById("content");
-    for(var i = 0; i < content.childElementCount - 1; i++){
+    for(var i = 0; i < content.childElementCount; i++){
         if(content.children[i].classList.contains("hidden")){
             content.children[i].classList.toggle("hidden");
         }
