@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function loadXMLDoc() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "Basic.xml", true);
+    xhr.open("GET", "/ninhqd/test/assets/Basic.xml", true);
     xhr.onload = function (e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
