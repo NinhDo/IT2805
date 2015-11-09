@@ -1,6 +1,6 @@
 <?php
-	include "browseHead.html";
+	include "./assets/browseHead.html";
 	include "header.php";
-	include "browse.html";
+	include "./assets/browse.html";
 	include "footer.php";
 ?>
