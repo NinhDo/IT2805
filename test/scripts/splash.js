@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log(event);
     var date = new Date().getTime();
     var lastDateVisited = null;
     if(typeof (Storage) !== "undefined") {
@@ -7,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    if(lastDateVisited == null || date - lastDateVisited > 1000 || isNaN(lastDateVisited)) {
+    if(lastDateVisited == null || date - lastDateVisited > 5 * 60 * 1000 || isNaN(lastDateVisited)) {
         if (localStorage !== "undefined") {
             localStorage.setItem("lastDateVisited", date);
         }

@@ -252,7 +252,7 @@ WRAPPER
     width: 60%;
     min-height: 65%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /********************************************
@@ -326,6 +326,19 @@ INDEX CSS
 /********************************************
 BROWSE CSS
 *********************************************/
+
+#searchBar {
+    position: fixed;
+    left: 25px;
+    min-width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#searchBar ul {
+    list-style: none;
+    padding: 0;
+}
 
 #puppetInfo:hover #dropdown {
     display: block;

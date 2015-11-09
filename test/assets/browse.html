@@ -1,14 +1,16 @@
 <form id="searchBar" onsubmit="return false">
     <div class="search">
-        <input id="searchField" onkeypress="if(event.keyCode == 13) search();"/>
+        <input id="searchField" onkeypress="if(event.keyCode == 13) search();"/><br/>
         <button type="button" id="submitSrc" onclick="search()">Submit</button>
     </div>
-    <input type="checkbox" id="marionette" onclick="if(this.checked || !this.checked){ search(); }"><label for="marionette">Marionette</label>
-    <input type="checkbox" id="handPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="handPuppet">Hand Puppet</label>
-    <input type="checkbox" id="shadowPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="shadowPuppet">Shadow Puppet</label>
-    <input type="checkbox" id="rodPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="rodPuppet">Rod Puppet</label>
-    <input type="checkbox" id="ventriloquist" onclick="if(this.checked || !this.checked){ search(); }"><label for="ventriloquist">Ventriloquist</label>
-    <input type="checkbox" id="animatronic" onclick="if(this.checked || !this.checked){ search(); }"><label for="animatronic">Animatronic</label>
+    <ul>
+        <li><input type="checkbox" id="marionette" onclick="if(this.checked || !this.checked){ search(); }"><label for="marionette">Marionette</label></li>
+        <li><input type="checkbox" id="handPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="handPuppet">Hand Puppet</label></li>
+        <li><input type="checkbox" id="shadowPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="shadowPuppet">Shadow Puppet</label></li>
+        <li><input type="checkbox" id="rodPuppet" onclick="if(this.checked || !this.checked){ search(); }"><label for="rodPuppet">Rod Puppet</label></li>
+        <li><input type="checkbox" id="ventriloquist" onclick="if(this.checked || !this.checked){ search(); }"><label for="ventriloquist">Ventriloquist</label></li>
+        <li><input type="checkbox" id="animatronic" onclick="if(this.checked || !this.checked){ search(); }"><label for="animatronic">Animatronic</label></li>
+    </ul>
 </form>
 <div id="content">
 </div>

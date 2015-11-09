@@ -57,4 +57,6 @@ function readFile(xml) {
             "<button class=\"puppetButton\" type = \"button\" onclick=\"expand\">See more!</button></div>";
     }
     document.getElementById("content").innerHTML = textFromXML;
+    console.log("done fetching");
+    search();
 }
