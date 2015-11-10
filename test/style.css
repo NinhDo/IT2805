@@ -162,7 +162,7 @@ FOOTER CSS
 *********************************************/
 
 #footer {
-    bottom: 0px;
+    bottom: 0;
     z-index: 0;
     position: relative;
     font-family: Helvetica, "Helvetica-Neue", serif, sans-serif, "Comic Sans MS";
@@ -276,10 +276,7 @@ INDEX CSS
 }
 
 #topSection:after {
-    background-color: #6B4C20;
-    background-image: url("./images/indexTopSectionBackground.png");
-    background-repeat: repeat;
-    background-position: 0 50%;
+    background: #6B4C20 url("./images/indexTopSectionBackground.png") repeat 0 50%;
     background-size: 50%;
     opacity: 0.5;
     width: 100%;
@@ -292,10 +289,7 @@ INDEX CSS
 }
 
 #middleSection:after {
-    background-color: #6B4C20;
-    background-image: url("./images/R2D2-feature-1.png");
-    background-repeat: repeat;
-    background-position: 0 10%;
+    background: #6B4C20 url("./images/R2D2-feature-1.png") repeat 0 10%;
     background-size: 100%;
     opacity: 0.5;
     width: 100%;
@@ -308,10 +302,7 @@ INDEX CSS
 }
 
 #bottomSection:after {
-    background-color: white;
-    background-image: url("./images/Muppets-Kermit.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    background: white url("./images/Muppets-Kermit.jpg") no-repeat 100% 100%;
     background-size: 50%;
     opacity: 0.5;
     width: 100%;
