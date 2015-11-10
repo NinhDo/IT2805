@@ -1,6 +1,6 @@
 <?php
 	include "./assets/frontpageHead.html";
-	include "./assets/header.php";
+	include "./assets/header.html";
 	include "./assets/frontpage.html";
-	include "./assets/footer.php";
+	include "./assets/footer.html";
 ?>
