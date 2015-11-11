@@ -28,10 +28,7 @@ function readFile(xml) {
         type = x[i].getAttribute("type");
         for (var c = 0; c < type.length; c++) {
             if (type[c] == type[c].toUpperCase()) {
-                console.log(type[c]);
-                console.log(type.slice(c));
-                console.log(type.slice(0, c) + " " + type.slice(c));
-                //type = type.slice(0, c) + " " + type.slice(c);
+                type = type.slice(0, c) + " " + type.slice(c);
                 break;
             }
         }
