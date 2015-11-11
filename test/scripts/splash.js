@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function draw() {
-    ctx = canvas.getContext("2D");
+    ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.lineWidth = 5;
