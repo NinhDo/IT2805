@@ -445,3 +445,76 @@ BROWSE CSS
 .hidden {
     display: none !important;
 }
+
+/********************************************
+PUPPETS CSS
+*********************************************/
+.box {
+    background: #4089CB;
+    border: 1px solid #183045;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 65px;
+    width: 45%;
+
+    padding: 5% 0 5% 0;
+    margin: 10px;
+    z-index: 1;
+    font-size: 19px;
+}
+
+.bigBox {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    margin-top: 40px;
+    width: 170px;
+    height: 50px;
+    font-weight: bold;
+}
+
+#boxWrapper div div {
+    margin-top: 40px;
+    padding: 0 5px 0 5px;
+    color: #183045;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+#info {
+    color: #183045;
+    font-weight: bold;
+}
+
+#boxWrapper {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+/**************************************
+***      About/FAQ/Support CSS      ***
+**************************************/
+
+.about-card, .faq-card, .support-card {
+    background-color: rgba(64, 137, 203, 0.5);
+    padding: 10px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about-card-title, .faq-card-title, .support-card-title {
+    font-size: 1em;
+    margin: 0;
+}
+
+.about-card-para, .faq-card-para, .support-card-para {
+    width: 50%;
+}
