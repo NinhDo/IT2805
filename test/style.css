@@ -225,16 +225,8 @@ FOOTER CSS
     float: right;
 }
 
-#footer li a {
-    color: #888888;
-}
-
-#footer li a:hover {
-    color: #484848;
-}
-
-#footer .copyright, #footer li a {
-    color: #888888;
+#footer li:hover {
+    background: #6b5c20;
 }
 
 .footer-media, .footer-sitemap {
@@ -243,12 +235,12 @@ FOOTER CSS
 }
 
 .footer-sitemap {
-    background-color: rgb(230, 230, 230);
+    background-color: #ffdb54;
     padding-bottom: 10px;
 }
 
 .footer-media {
-    background-color: rgb(200, 200, 200);
+    background-color: #ffb854;
 }
 
 #follow {
