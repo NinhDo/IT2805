@@ -80,7 +80,7 @@ HEADER CSS
     -webkit-transition: all 1s;
 }
 
-.navbuttons:first {
+.navbuttons:first-of-type {
     margin-left: 100px;
 }
 
