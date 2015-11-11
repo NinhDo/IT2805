@@ -467,6 +467,10 @@ PUPPETS CSS
     -webkit-transition: all .25s;
 }
 
+.box:hover {
+    background: rgba(107, 49, 32, 0.1);
+}
+
 .bigBox {
     z-index: 10;
     color: #183045;
