@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function loadXMLDoc() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/ninhqd/test/assets/productListing.xml", true);
+    xhr.open("GET", "/ninhqd/projectcottonfist/assets/productListing.xml", true);
     xhr.onload = function (e) {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
@@ -36,7 +36,7 @@ function readFile(xml) {
         }
         textFromXML += "<div class=\"puppetDiv\" id=\"" + id + "\">" +
             "<img class=\"puppetImage\"" +
-            "src=\"/ninhqd/test/images/xmlImages/" +
+            "src=\"/ninhqd/projectcottonfist/images/xmlImages/" +
             x[i].children[1].innerHTML +
             '" alt="' + id + "\">" +
             "<div class = \"nameAndType\"><h3 class=\"puppetName\">" +
