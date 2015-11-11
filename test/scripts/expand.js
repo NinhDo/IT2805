@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
     if (location.hash != null) {
         try {
-            var id = location.hash.splice(1);
+            var id = location.hash.slice(1);
             var box = document.getElementById(id);
             setTimeout(function () {
                 box.children[0].classList.toggle("hidden");
