@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
     document.addEventListener("click", function () {
-        console.log(event);
+        console.log(event.target);
     });
     if (location.hash != "") {
         try {
