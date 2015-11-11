@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (lastDateVisited == null || date - lastDateVisited > 1000 || isNaN(lastDateVisited)) {
-        if (localStorage !== "undefined") {
+        if (localStorage !== undefined) {
             localStorage.setItem("lastDateVisited", date);
         }
         makeBig();

@@ -23,13 +23,13 @@ function readFile(xml) {
     var x = xmlDoc.getElementsByTagName("puppets")[0].getElementsByTagName("puppet");
     var id;
     var type;
-    var newType = "";
     for (var i = 0; i < x.length; i++) {
         id = x[i].children[0].innerHTML;
         type = x[i].getAttribute("type");
         for (var c = 0; c < type.length; c++) {
             if (type[c] == type[c].toUpperCase()) {
                 console.log(type[c]);
+                console.log(type.slice(c));
                 type[c] = " " + type[c];
                 break;
             }
