@@ -147,6 +147,8 @@ HEADER CSS
 }
 
 #dropdown li a {
+    position: relative;
+    font-size: 0.8em;
     top: 50%;
     transform: translateY(-50%);
     -o-transform: translateY(-50%);
