@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
+    document.addEventListener("click", function () {
+        console.log(event);
+    });
     if (location.hash != "") {
         try {
             var id = location.hash.slice(1);
