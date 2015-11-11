@@ -25,6 +25,8 @@ function draw() {
     ctx = canvas.getContext("2D");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
+    ctx.lineWidth = 5;
+    ctx.lineCap = "round";
     ctx.moveTo(50, 100);
     ctx.lineTo(100, 125);
     ctx.lineTo(150, 10);
