@@ -1,9 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
-    try {
-        console.log(location.hash);
-    } catch (e) {
-        console.log(e.message);
+    if (location.hash != null) {
+        try {
+            var id = location.hash.splice(1);
+            var box = document.getElementById(id);
+            setTimeout(function () {
+                box.children[0].classList.toggle("hidden");
+            }, 300);
+            box.classList.toggle("bigBox");
+        } catch (e) {
+            console.log(e.message);
+        }
     }
 });
 
@@ -25,7 +32,7 @@ function expand() {
     }
 }
 
-function expandBox() {
+function expandBox(event) {
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
     if (!box.children[0].classList.contains("hidden")) {
         console.log(box.children[0].classList.contains("hidden"));
