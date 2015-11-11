@@ -40,6 +40,7 @@ function expandBoxFromDropdown() {
     console.log(event);
     try {
         var id = location.hash.slice(1);
+        console.log(id);
         var box = document.getElementById(id);
         console.log(box);
         setTimeout(function () {
