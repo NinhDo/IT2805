@@ -57,6 +57,7 @@ HEADER CSS
 .navbarBig {
     height: 5% !important;;
     bottom: 40% !important;;
+    background: none !important;
 }
 
 .headerResize {
