@@ -35,7 +35,6 @@ function expand() {
 function expandBox() {
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
     if (!box.children[0].classList.contains("hidden")) {
-        console.log(box.children[0].classList.contains("hidden"));
         box.children[0].classList.toggle("hidden");
     }
     else {
