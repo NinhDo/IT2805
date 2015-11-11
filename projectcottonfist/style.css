@@ -354,8 +354,9 @@ BROWSE CSS
 
 #searchBar {
     position: fixed;
-    left: 25px;
+    left: 7%;
     min-width: 100px;
+    width: 10%;
     border: 1px solid black;
     padding: 10px;
     z-index: 10;
