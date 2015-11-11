@@ -53,6 +53,8 @@ function makeBig() {
 function resize() {
     document.removeEventListener("mousewheel", resize);
     window.cancelAnimationFrame(draw);
+    ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var html = document.getElementsByTagName("html");
     var header = document.getElementById("header");
