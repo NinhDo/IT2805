@@ -177,7 +177,7 @@ HEADER CSS
 }
 
 #dropdown li:hover {
-    background: #6b5c20;
+    background-color: rgba(186, 156, 42, 0.5);
 }
 
 #splashArrow {
