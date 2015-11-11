@@ -469,10 +469,6 @@ PUPPETS CSS
 }
 
 .bigBox {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 10;
     color: #183045;
     background: #5AA9EF;
@@ -507,6 +503,10 @@ PUPPETS CSS
     margin: auto;
     width: 100%;
     min-height: 420px;
+    transition: all .25s;
+    -o-transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-transition: all .25s;
 }
 
 /**************************************
