@@ -467,13 +467,6 @@ PUPPETS CSS
     -webkit-transition: all .25s;
 }
 
-.box div {
-    transition: display .25s 1s;
-    -o-transition: display .25s 1s;
-    -moz-transition: display .25s 1s;
-    -webkit-transition: display .25s 1s;
-}
-
 .bigBox {
     z-index: 10;
     color: #183045;

@@ -22,6 +22,8 @@ function expand() {
 
 function expandBox() {
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
-    box.children[0].classList.toggle("hidden");
+    setTimeout(function () {
+        box.children[0].classList.toggle("hidden");
+    }, 300);
     box.classList.toggle("bigBox");
 }
