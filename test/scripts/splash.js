@@ -57,6 +57,7 @@ function makeBig() {
 function resize() {
     document.removeEventListener("mousewheel", resize);
     window.cancelAnimationFrame(draw);
+    drawing = false;
     ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
