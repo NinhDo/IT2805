@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
-    if (location.hash != null) {
+    if (location.hash != "") {
         try {
             var id = location.hash.slice(1);
             var box = document.getElementById(id);
