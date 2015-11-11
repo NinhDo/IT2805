@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(event);
     var date = new Date().getTime();
     var lastDateVisited = null;
+    canvas = document.getElementById("splashArrow");
     if(typeof (Storage) !== "undefined") {
         if (localStorage.getItem("lastDateVisited") != null) {
             lastDateVisited = localStorage.getItem("lastDateVisited");
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("mousewheel", resize);
-        canvas = document.getElementById("splashArrow");
         window.requestAnimationFrame(draw);
     }
 });
