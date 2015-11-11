@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("mousewheel", resize);
-        canvas = docuent.getElementById("splashArrow");
+        canvas = document.getElementById("splashArrow");
         window.requestAnimationFrame(draw);
     }
 });
@@ -30,6 +30,7 @@ function draw() {
     ctx.moveTo(50, 100);
     ctx.lineTo(100, 125);
     ctx.lineTo(150, 10);
+    ctx.stroke();
     ctx.closePath();
     window.requestAnimationFrame(draw);
 }
