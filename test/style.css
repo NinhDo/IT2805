@@ -281,7 +281,7 @@ WRAPPER
     width: 60%;
     min-height: 70%;
     height: auto;
-    margin: auto;
+    margin: 0 auto -128px;
     padding-top: 20px;
 }
 
