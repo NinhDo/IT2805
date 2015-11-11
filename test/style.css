@@ -542,6 +542,7 @@ PUPPETS CSS
     padding-left: 50px;
     margin-bottom: 20px;
     position: relative;
+    border: 1px solid black;
 }
 
 .about-card-title, .faq-card-title, .support-card-title {
@@ -551,4 +552,8 @@ PUPPETS CSS
 
 .about-card-para, .faq-card-para, .support-card-para {
     width: 50%;
+}
+
+.about-card-logo {
+    width: 80%;
 }
