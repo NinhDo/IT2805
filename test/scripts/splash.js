@@ -1,4 +1,5 @@
 var canvas, ctx;
+var drawing = false;
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log(event);
@@ -17,22 +18,25 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("mousewheel", resize);
+        drawing = true;
         window.requestAnimationFrame(draw);
     }
 });
 
 function draw() {
-    ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.lineWidth = 2;
-    ctx.lineCap = "round";
-    ctx.moveTo(50, 100);
-    ctx.lineTo(100, 125);
-    ctx.lineTo(150, 100);
-    ctx.stroke();
-    ctx.closePath();
-    window.requestAnimationFrame(draw);
+    if (drawing) {
+        ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.lineWidth = 2;
+        ctx.lineCap = "round";
+        ctx.moveTo(50, 100);
+        ctx.lineTo(100, 125);
+        ctx.lineTo(150, 100);
+        ctx.stroke();
+        ctx.closePath();
+        window.requestAnimationFrame(draw);
+    }
 }
 
 
