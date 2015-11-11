@@ -468,10 +468,10 @@ PUPPETS CSS
 }
 
 .box div {
-    transition: all .25s .25s;
-    -o-transition: all .25s .25s;
-    -moz-transition: all .25s .25s;
-    -webkit-transition: all .25s .25s;
+    transition: display .25s 1s;
+    -o-transition: display .25s 1s;
+    -moz-transition: display .25s 1s;
+    -webkit-transition: display .25s 1s;
 }
 
 .bigBox {
@@ -508,6 +508,9 @@ PUPPETS CSS
     margin: auto;
     width: 100%;
     min-height: 420px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 /**************************************
