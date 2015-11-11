@@ -22,10 +22,6 @@ function expand() {
 
 function expandBox() {
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
-    var info = document.getElementById("info");
     box.children[0].classList.toggle("hidden");
     box.classList.toggle("bigBox");
-
-    if (box.classList.contains("bigBox")) info.innerHTML = "Click the boxes for more information";
-    else info.innerHTML = "Click to shrink the box";
 }
