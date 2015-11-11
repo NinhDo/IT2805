@@ -1,20 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
-    document.addEventListener("click", function () {
-        console.log(event.target);
-    });
-    if (location.hash != "") {
-        try {
-            var id = location.hash.slice(1);
-            var box = document.getElementById(id);
-            setTimeout(function () {
-                box.children[0].classList.toggle("hidden");
-            }, 300);
-            box.classList.toggle("bigBox");
-        } catch (e) {
-            console.log(e.message);
-        }
-    }
+    expandBoxFromDropdown();
 });
 
 function isExpandable() {
@@ -22,6 +8,8 @@ function isExpandable() {
         expand();
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
         expandBox();
+    } else if (event.target.parentNode.parentNode.id == "dropdown") {
+        expandBoxFromDropdown();
     }
 
 }
@@ -46,4 +34,17 @@ function expandBox() {
         }, 300);
     }
     box.classList.toggle("bigBox");
+}
+
+function expandBoxFromDropdown() {
+    try {
+        var id = location.hash.slice(1);
+        var box = document.getElementById(id);
+        setTimeout(function () {
+            box.children[0].classList.toggle("hidden");
+        }, 300);
+        box.classList.toggle("bigBox");
+    } catch (e) {
+        console.log(e.message);
+    }
 }
