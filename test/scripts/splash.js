@@ -1,10 +1,7 @@
-var canvas, ctx;
-
 document.addEventListener("DOMContentLoaded", function() {
     console.log(event);
     var date = new Date().getTime();
     var lastDateVisited = null;
-    canvas = document.getElementById("splashArrow");
     if(typeof (Storage) !== "undefined") {
         if (localStorage.getItem("lastDateVisited") != null) {
             lastDateVisited = localStorage.getItem("lastDateVisited");
@@ -22,7 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function draw() {
-    ctx = canvas.getContext("2d");
+    var header = document.getElementById("header");
+    var cvs = document.createElement("canvas");
+    cvs.id = "splashArrow";
+    header.appendChild(cvs);
+    var canvas = document.getElementById("splashArrow");
+    var ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.lineWidth = 2;
