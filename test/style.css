@@ -148,6 +148,7 @@ HEADER CSS
 }
 
 #dropdown li a {
+    height: auto;
     position: relative;
     font-size: 0.8em;
     top: 50%;
