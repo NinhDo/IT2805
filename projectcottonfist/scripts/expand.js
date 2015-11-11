@@ -41,6 +41,7 @@ function expandBoxFromDropdown() {
     try {
         var id = location.hash.slice(1);
         var box = document.getElementById(id);
+        console.log(box);
         setTimeout(function () {
             box.children[0].classList.toggle("hidden");
         }, 300);
