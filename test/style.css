@@ -452,11 +452,10 @@ PUPPETS CSS
 .box {
     background: #4089CB;
     border: 1px solid #183045;
-    display: inline-block;
     text-align: center;
     position: relative;
     height: 65px;
-    width: 45%;
+    width: 80%;
 
     padding: 5% 0 5% 0;
     margin: 10px;
@@ -472,7 +471,6 @@ PUPPETS CSS
     z-index: 10;
     color: #183045;
     background: #5AA9EF;
-    width: 80%;
     height: 300px;
 }
 
@@ -503,10 +501,6 @@ PUPPETS CSS
     margin: auto;
     width: 100%;
     min-height: 420px;
-    transition: all 1s;
-    -o-transition: all 1s;
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
 }
 
 /**************************************
