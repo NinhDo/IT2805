@@ -26,7 +26,7 @@ function search() {
     if (typesWanted.length != 0 && text.length == 0) {
         hideAll(content);
         for (i = 0; i < content.childElementCount; i++) {
-            if (typesWanted.indexOf(content.children[i].children[1].children[1].innerHTML) >= 0) {
+            if (typesWanted.indexOf(content.children[i].children[1].children[1].classList) >= 0) {
                 content.children[i].classList.toggle("hidden");
             }
         }
