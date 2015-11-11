@@ -68,10 +68,10 @@ HEADER CSS
 }
 
 .logoResize {
-    transition: height 1s, top 1s .25s;
-    -o-transition: height 1s, top 1s .25s;
-    -moz-transition: height 1s, top 1s .25s;
-    -webkit-transition: height 1s, top 1s .25s;
+    transition: height .75s, top 1s .25s;
+    -o-transition: height .75s, top 1s .25s;
+    -moz-transition: height .75s, top 1s .25s;
+    -webkit-transition: height .75s, top 1s .25s;
 }
 
 .navbarResize {
