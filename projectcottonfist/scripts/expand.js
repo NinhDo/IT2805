@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
-    if (location.hash != "") expandBoxFromDropdown();
+    window.addEventListener("hashchange", expandBoxFromDropdown);
 });
 
 function isExpandable() {
@@ -8,10 +8,7 @@ function isExpandable() {
         expand();
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
         expandBox();
-    } else if (event.target.parentNode.parentNode.id == "dropdown") {
-        setTimeout(expandBoxFromDropdown, 10);
     }
-
 }
 
 function expand() {
@@ -37,16 +34,15 @@ function expandBox() {
 }
 
 function expandBoxFromDropdown() {
-    console.log(event);
     try {
         var id = location.hash.slice(1);
-        console.log(id);
         var box = document.getElementById(id);
-        console.log(box);
-        setTimeout(function () {
-            box.children[0].classList.toggle("hidden");
-        }, 300);
-        box.classList.toggle("bigBox");
+        if (box.classList.contains("box")) {
+            setTimeout(function () {
+                box.children[0].classList.toggle("hidden");
+            }, 300);
+            box.classList.toggle("bigBox");
+        }
     } catch (e) {
         console.log(e.message);
     }
