@@ -37,6 +37,7 @@ function expandBox() {
 }
 
 function expandBoxFromDropdown() {
+    console.log(event);
     try {
         var id = location.hash.slice(1);
         var box = document.getElementById(id);
