@@ -125,7 +125,7 @@ HEADER CSS
 }
 
 .navbuttons:hover {
-    background-color: #6b5c20;
+    background-color: rgba(255, 219, 84, 1);
 }
 
 #dropdown {
