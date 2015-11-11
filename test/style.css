@@ -225,8 +225,12 @@ FOOTER CSS
     float: right;
 }
 
-#footer li:hover {
-    background: #6b5c20;
+#footer li a {
+    color: black;
+}
+
+#footer li a:hover {
+    background: grey;
 }
 
 .footer-media, .footer-sitemap {
