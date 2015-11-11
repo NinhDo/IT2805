@@ -139,7 +139,7 @@ HEADER CSS
     display: none;
     position: absolute;
     list-style: none;
-    margin: 0;
+    margin: -1px 0 0 0;
     padding: 0;
     width: 100%;
     z-index: 10;
