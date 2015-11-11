@@ -23,7 +23,6 @@ function search() {
             typesWanted.push(p.children[i].children[0].id);
         }
     }
-    console.log("typesWanted" + typesWanted);
     if (typesWanted.length != 0 && text.length == 0) {
         hideAll(content);
         for (i = 0; i < content.childElementCount; i++) {

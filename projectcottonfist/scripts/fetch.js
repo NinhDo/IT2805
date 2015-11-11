@@ -30,6 +30,7 @@ function readFile(xml) {
             if (type[c] == type[c].toUpperCase()) {
                 console.log(type[c]);
                 console.log(type.slice(c));
+                console.log(type);
                 type[c] = " " + type[c];
                 break;
             }
