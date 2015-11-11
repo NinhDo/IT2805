@@ -1,5 +1,4 @@
 var canvas, ctx;
-var drawing = false;
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log(event);
@@ -18,25 +17,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("mousewheel", resize);
-        drawing = true;
-        window.requestAnimationFrame(draw);
+        draw();
     }
 });
 
 function draw() {
-    if (drawing) {
-        ctx = canvas.getContext("2d");
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.beginPath();
-        ctx.lineWidth = 2;
-        ctx.lineCap = "round";
-        ctx.moveTo(50, 100);
-        ctx.lineTo(100, 125);
-        ctx.lineTo(150, 100);
-        ctx.stroke();
-        ctx.closePath();
-        window.requestAnimationFrame(draw);
-    }
+    ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.moveTo(50, 100);
+    ctx.lineTo(100, 125);
+    ctx.lineTo(150, 100);
+    ctx.stroke();
+    ctx.closePath();
 }
 
 
@@ -56,10 +51,6 @@ function makeBig() {
 
 function resize() {
     document.removeEventListener("mousewheel", resize);
-    window.cancelAnimationFrame(draw);
-    drawing = false;
-    ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var html = document.getElementsByTagName("html");
     var header = document.getElementById("header");
@@ -67,6 +58,7 @@ function resize() {
     var navbar = document.getElementById("navbar");
     var wrapper = document.getElementById("wrapper");
     var footer = document.getElementById("footer");
+    header.removeChild(canvas);
 
     html[0].style.position = "fixed";
 
