@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.addEventListener("click", isPuppetDiv);
+    document.addEventListener("click", isExpandable);
 });
 
-function isPuppetDiv() {
+function isExpandable() {
     if(event.target.classList.contains("puppetDiv") || event.target.parentNode.classList.contains("puppetDiv")) {
         expand();
+    } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
+        expandBox();
     }
 
 }
@@ -16,4 +18,14 @@ function expand() {
     for (var i = 0; i < pDiv.children.length; i++) {
         pDiv.children[i].classList.toggle(pDiv.children[i].classList[0] + "Loaded");
     }
+}
+
+function expandBox() {
+    var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
+    var info = document.getElementById("info");
+    box.children[0].classList.toggle("hidden");
+    box.classList.toggle("bigBox");
+
+    if (box.classList.contains("bigBox")) info.innerHTML = "Click the boxes for more information";
+    else info.innerHTML = "Click to shrink the box";
 }

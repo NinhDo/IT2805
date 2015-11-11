@@ -469,6 +469,11 @@ PUPPETS CSS
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
+    color: #183045;
+    background: #5AA9EF;
+    width: 100%;
+    height: 400px;
 }
 
 .btn {
