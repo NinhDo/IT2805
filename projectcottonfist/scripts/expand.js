@@ -9,7 +9,7 @@ function isExpandable() {
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
         expandBox();
     } else if (event.target.parentNode.parentNode.id == "dropdown") {
-        expandBoxFromDropdown();
+        setTimeout(expandBoxFromDropdown, 10);
     }
 
 }
