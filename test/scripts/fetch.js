@@ -36,7 +36,7 @@ function readFile(xml) {
         }
         textFromXML += "<div class=\"puppetDiv\" id=\"" + id + "\">" +
             "<img class=\"puppetImage\"" +
-            "src=\"" +
+            "src=\"/ninhqd/test/images/xmlImages/" +
             x[i].children[1].innerHTML +
             '" alt="' + id + "\">" +
             "<div class = \"nameAndType\"><h3 class=\"puppetName\">" +

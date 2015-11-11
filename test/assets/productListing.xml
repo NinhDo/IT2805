@@ -14,7 +14,7 @@
 <puppets>
     <puppet type="marionette">
         <id>MR0001</id>
-        <img>/mathiafl/clone/test/images/ballerinaMarionette.jpg</img>
+        <img>ballerinaMarionette.jpg</img>
         <name>Ballerina Nina</name>
         <size>Medium</size>
         <price>€130.5</price>
@@ -24,7 +24,7 @@
     </puppet>
     <puppet type="rodPuppet">
         <id>RP0001</id>
-        <img>/mathiafl/clone/test/images/alienRod.jpg</img>
+        <img>alienRod.jpg</img>
         <name>Alien</name>
         <size>Small</size>
         <price>€75.90</price>
@@ -35,7 +35,7 @@
     </puppet>
     <puppet type="rodPuppet">
         <id>RP0002</id>
-        <img>/mathiafl/clone/test/images/chutuluRod.jpg</img>
+        <img>chutuluRod.jpg</img>
         <name>Chutulu</name>
         <size>Gargantuan</size>
         <price>€199999.90</price>
@@ -44,7 +44,7 @@
     </puppet>
     <puppet type="shadowPuppet">
         <id>SP0001</id>
-        <img>/mathiafl/clone/test/images/courtingShadow.jpg</img>
+        <img>courtingShadow.jpg</img>
         <name>Jane &amp; James</name>
         <size>Medium</size>
         <price>€160.5</price>
@@ -54,7 +54,7 @@
     </puppet>
     <puppet type="handPuppet">
         <id>HP0001</id>
-        <img>/mathiafl/clone/test/images/earnieHand.JPG</img>
+        <img>earnieHand.JPG</img>
         <name>Earnie</name>
         <size>Medium</size>
         <price>€99.85</price>
@@ -63,22 +63,103 @@
     </puppet>
     <puppet type="handPuppet">
         <id>HP0002</id>
-        <img>/mathiafl/clone/test/images/elmoHand.jpg</img>
+        <img>elmoHand.jpg</img>
         <name>Elmo!</name>
         <size>Medium</size>
         <price>€999.85</price>
         <summary>Something about him beeing suer famous from Sesame Street</summary>
         <description>This guy dosen't atleast eat your cookies</description>
     </puppet>
-    <puppet type="animatronics">
+    <puppet type="animatronic">
         <id>AN0001</id>
-        <img>/mathiafl/clone/test/images/etAnima.jpg</img>
+        <img>etAnima.jpg</img>
         <name>E.T</name>
         <size>Huge</size>
         <price>€9999.85</price>
         <summary>This stranded alien is looking for a home</summary>
         <description>NB! be careful of having your phone close to him or you may see some expensive long distance calls
             on your bill.
+        </description>
+    </puppet>
+    <puppet type="animatronic">
+        <id>AN0002</id>
+        <img>fluffyAnima.jpg</img>
+        <name>Gremllin - Cute</name>
+        <size>Medium</size>
+        <price>€799.85</price>
+        <summary>Look at this cute thing</summary>
+        <description>Don't feed them after midnight, don't give them water atleast.
+        </description>
+    </puppet>
+    <puppet type="handPuppet">
+        <id>HP0003</id>
+        <img>goboHand.jpg</img>
+        <name>Gobo</name>
+        <size>Medium</size>
+        <price>€800.85</price>
+        <summary>As seen in the TV-series Fraggle rock.</summary>
+        <description>Dance your cares away
+            Worry's for another day.
+            Let the music play,
+            Down at Fraggle Rock
+        </description>
+    </puppet>
+    <puppet type="animatronic">
+        <id>AN0003</id>
+        <img>gremlinAnima.png</img>
+        <name>Gremllin - Not so Cute</name>
+        <size>Huge</size>
+        <price>€799.85</price>
+        <summary>WHAT HAVE YOU DONE, didn't you read the instructions!?</summary>
+        <description>If you ant to know how to beat it you need to watch the movie cuz i ain't no spoiler-bitch
+        </description>
+    </puppet>
+    <puppet type="marionette">
+        <id>MR0002</id>
+        <img>jacksonMarionette</img>
+        <name>Michael Jackson</name>
+        <size>Child size</size>
+        <price>€9758.90</price>
+        <summary>How about a new friend for your child to play with?</summary>
+        <description>I swear he didn't do anyt-hi-hi-ng wrong.</description>
+    </puppet>
+    <puppet type="marionette">
+        <id>MR0003</id>
+        <img>jokerMarionette</img>
+        <name>Jack the Joker</name>
+        <size>Small</size>
+        <price>€140.30</price>
+        <summary>How about a joke</summary>
+        <description>Knock knock, who's there?, knuck-els</description>
+    </puppet>
+    <puppet type="shadowPuppet">
+        <id>SP0002</id>
+        <img>seamonsterShadow.jpg</img>
+        <name>Sal the Seamonster</name>
+        <size>Tiny</size>
+        <price>€89.75</price>
+        <summary>Play with Sal in front of a lamp to scare your parents</summary>
+        <description>30% discount if you make a vine about it and uses the hashtag #SALISBEAST</description>
+    </puppet>
+    <puppet type="rodPuppet">
+        <id>RP0003</id>
+        <img>wizardRod</img>
+        <name>Wally the wise Wizard</name>
+        <size>Medium</size>
+        <price>€147.28</price>
+        <summary>This guy is really smart, it may rub-off</summary>
+        <description>His wind magic will blow you away</description>
+    </puppet>
+    <puppet type="shadowPuppet">
+        <id>SP0003</id>
+        <img>wolfShadow.jpg</img>
+        <name>Frank the Wolf</name>
+        <size>Huge</size>
+        <price>€1400.45</price>
+        <summary>This grandmother doll is adorable and should be given to all young girls with a red hood</summary>
+        <description>But, why are the ears so big?, It's so she can hear you better. Why are they eyes so big then?,
+            That is so she can see your child better. What about the biig teeth then?, Oh sorry that must be a
+            manufactory error, we will give you 10% discount
         </description>
     </puppet>
 </puppets>
