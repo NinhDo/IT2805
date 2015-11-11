@@ -197,7 +197,6 @@ FOOTER CSS
     position: absolute;
     width: 100%;
     height: 128px;
-    bottom: 0;
     z-index: 0;
     font-family: Helvetica, "Helvetica-Neue", serif, sans-serif, "Comic Sans MS";
     padding: 20px 0 0 0;
