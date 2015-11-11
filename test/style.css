@@ -230,7 +230,7 @@ FOOTER CSS
 }
 
 #footer li a:hover {
-    background: grey;
+    color: grey;
 }
 
 .footer-media, .footer-sitemap {
