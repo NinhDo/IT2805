@@ -141,10 +141,14 @@ HEADER CSS
 #dropdown li {
     background: #ffdb54;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 20px;
     margin-bottom: 3px;
     overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 #puppetInfo:hover #dropdown {
