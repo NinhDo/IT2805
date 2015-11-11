@@ -60,7 +60,7 @@ function resize() {
     var navbar = document.getElementById("navbar");
     var wrapper = document.getElementById("wrapper");
     var footer = document.getElementById("footer");
-    header.removeChild(canvas);
+    header.removeChild(document.getElementById("splashArrow"));
 
     html[0].style.position = "fixed";
 
