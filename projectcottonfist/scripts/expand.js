@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
-    expandBoxFromDropdown();
+    if (loccation.hash != "") expandBoxFromDropdown();
 });
 
 function isExpandable() {
