@@ -1,3 +1,5 @@
+var canvas, ctx;
+
 document.addEventListener("DOMContentLoaded", function() {
     console.log(event);
     var date = new Date().getTime();
@@ -14,8 +16,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("mousewheel", resize);
+        canvas = docuent.getElementById("splashArrow");
+        window.requestAnimationFrame(draw);
     }
 });
+
+function draw() {
+    ctx = canvas.getContext("2D");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.moveTo(50, 100);
+    ctx.lineTo(100, 125);
+    ctx.lineTo(150, 10);
+    ctx.closePath();
+    window.requestAnimationFrame(draw);
+}
+
 
 function makeBig() {
     var header = document.getElementById("header");
@@ -33,6 +49,7 @@ function makeBig() {
 
 function resize() {
     document.removeEventListener("mousewheel", resize);
+    window.cancelAnimationFrame(draw);
 
     var html = document.getElementsByTagName("html");
     var header = document.getElementById("header");

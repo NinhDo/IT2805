@@ -163,12 +163,12 @@ HEADER CSS
     background: #6b5c20;
 }
 
-canvas {
-    position: relative;
+#splashArrow {
+    position: absolute;
     transform: translate(-50%);
     left: 50%;
-    top: 50%;
-    height: 50%;
+    bottom: 0;
+    height: 200px;
 }
 
 
