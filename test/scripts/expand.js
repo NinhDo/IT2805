@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
+    try {
+        console.log(location.hash);
+    } catch (e) {
+        console.log(e.message);
+    }
 });
 
 function isExpandable() {
