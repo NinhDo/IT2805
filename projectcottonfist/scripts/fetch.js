@@ -19,13 +19,12 @@ function loadXMLDoc() {
 
 function readFile(xml) {
     var xmlDoc = xml.responseXML;
-    console.log(xmlDoc);
     var textFromXML="";
     var x = xmlDoc.getElementsByTagName("puppets")[0].getElementsByTagName("puppet");
-    console.log(x);
     var id;
     var type;
     for (var i = 0; i < x.length; i++) {
+        console.log(x[i]);
         id = x[i].children[0].innerHTML;
         type = x[i].getAttribute("type");
         for (var c = 0; c < type.length; c++) {
