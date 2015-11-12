@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function isExpandable(event) {
+    console.log(event);
     if(event.target.classList.contains("puppetDiv") || event.target.parentNode.classList.contains("puppetDiv")) {
         expand();
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
@@ -13,6 +14,7 @@ function isExpandable(event) {
 }
 
 function expand(event) {
+    console.log(event);
     var pDiv = (event.target.classList.contains("puppetDiv"))?event.target: event.target.parentNode;
 
     pDiv.classList.toggle(pDiv.classList[0] + "Loaded");
@@ -22,6 +24,7 @@ function expand(event) {
 }
 
 function expandBox(event) {
+    console.log(event);
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
     if (!box.children[0].classList.contains("hidden")) {
         box.children[0].classList.toggle("hidden");
