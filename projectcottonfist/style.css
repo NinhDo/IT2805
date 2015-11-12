@@ -576,6 +576,7 @@ PUPPETS CSS
 }
 
 #about-gunnar {
+    vertical-align: top;
     height: 200px;
     display: inline-block;
 }
