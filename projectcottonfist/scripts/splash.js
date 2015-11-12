@@ -51,7 +51,7 @@ function makeBig() {
 }
 
 function resize() {
-    document.removeEventListener("mousewheel", resize);
+    document.removeEventListener("wheel", resize);
 
     var html = document.getElementsByTagName("html");
     var header = document.getElementById("header");
