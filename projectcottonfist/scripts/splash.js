@@ -59,7 +59,8 @@ function resize() {
     var navbar = document.getElementById("navbar");
     var wrapper = document.getElementById("wrapper");
     var footer = document.getElementById("footer");
-    header.removeChild(document.getElementById("splashArrow"));
+    var canvas = document.getElementById("splashArrow");
+    header.removeChild(canvas);
 
     html[0].style.position = "fixed";
 
