@@ -290,7 +290,7 @@ INDEX CSS
 *********************************************/
 
 .mainPageSections {
-    border: 1px solid black;
+    border: 1px solid rgba(24, 48, 69, 0.5);
     padding: 10px;
     height: 250px;
     margin-bottom: 50px;
@@ -357,7 +357,7 @@ BROWSE CSS
     left: 7%;
     min-width: 100px;
     width: 10%;
-    border: 1px solid black;
+    border: 1px solid rgba(107, 76, 32, 0.5);
     padding: 10px;
     z-index: 10;
     background: #FFB854;
@@ -379,7 +379,7 @@ BROWSE CSS
 .puppetDiv {
     background: #4089CB;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgba(24, 48, 69, 0.5);
     min-width: 400px;
     transition: all .25s;
     -o-transition: all .25s;
@@ -407,7 +407,7 @@ BROWSE CSS
     height: 100px;
     width: 100px;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid rgba(24, 48, 69, 0.5);
     display: inline;
     transition: all .25s;
     -o-transition: all .25s;
@@ -559,7 +559,7 @@ PUPPETS CSS
     padding-left: 50px;
     margin-bottom: 20px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid rgba(24, 48, 69, 0.5);
 }
 
 .about-card-title, .faq-card-title, .support-card-title {
