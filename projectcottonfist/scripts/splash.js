@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("lastDateVisited", date);
         }
         makeBig();
-        document.addEventListener("mousewheel", resize);
+        document.addEventListener("wheel", resize);
         draw();
     }
 });
