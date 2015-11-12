@@ -65,7 +65,7 @@ function resize() {
     html[0].style.position = "fixed";
 
     setTimeout(function() {
-        html[0].style.position = null;
+        html[0].style.removeProperty("position");
     }, 1000);
 
     makeBig();

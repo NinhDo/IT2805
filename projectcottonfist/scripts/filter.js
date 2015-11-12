@@ -9,7 +9,6 @@ addEventListener('DOMContentLoaded', function () {
         }
         document.getElementById(data.checkbox).checked = true;
     } catch (err) {
-        console.log(err.message)
     }
 });
 

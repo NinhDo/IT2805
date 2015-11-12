@@ -45,6 +45,5 @@ function expandBoxFromDropdown() {
             box.classList.toggle("bigBox");
         }
     } catch (e) {
-        console.log(e.message);
     }
 }
