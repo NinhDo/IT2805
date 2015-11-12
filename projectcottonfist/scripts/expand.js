@@ -12,7 +12,7 @@ function isExpandable(event) {
     }
 }
 
-function expand() {
+function expand(event) {
     var pDiv = (event.target.classList.contains("puppetDiv"))?event.target: event.target.parentNode;
 
     pDiv.classList.toggle(pDiv.classList[0] + "Loaded");
@@ -21,7 +21,7 @@ function expand() {
     }
 }
 
-function expandBox() {
+function expandBox(event) {
     var box = (event.target.classList.contains("box")) ? event.target : event.target.parentNode;
     if (!box.children[0].classList.contains("hidden")) {
         box.children[0].classList.toggle("hidden");
