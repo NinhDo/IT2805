@@ -490,7 +490,7 @@ PUPPETS CSS
 *********************************************/
 .box {
     background: #4089CB;
-    border: 1px solid #183045;
+    border: 1px solid rgba(24, 48, 69, 0.5);
     text-align: center;
     position: relative;
     height: 75px;
