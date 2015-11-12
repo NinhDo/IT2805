@@ -25,6 +25,7 @@ function readFile(xml) {
     var type;
     for (var i = 0; i < x.length; i++) {
         console.log(x[i].childNodes[i]);
+        console.log(x[i].childNodes);
         id = x[i].children[0].innerHTML;
         type = x[i].getAttribute("type");
         for (var c = 0; c < type.length; c++) {
