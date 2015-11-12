@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
     window.addEventListener("hashchange", expandBoxFromDropdown);
+    expandBoxFromDropdown();
 });
 
 function isExpandable() {
