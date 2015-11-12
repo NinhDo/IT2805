@@ -568,8 +568,14 @@ PUPPETS CSS
 
 .about-card-para, .faq-card-para, .support-card-para {
     width: 50%;
+    display: inline-block;
 }
 
 #about-card-logo {
     width: 80%;
+}
+
+#about-gunnar {
+    height: 200px;
+    display: inline-block;
 }
