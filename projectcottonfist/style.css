@@ -555,8 +555,7 @@ PUPPETS CSS
 
 .about-card, .faq-card, .support-card {
     background-color: rgba(64, 137, 203, 0.5);
-    padding: 10px;
-    padding-left: 50px;
+    padding: 10px 10px 10px 50px;
     margin-bottom: 20px;
     position: relative;
     border: 1px solid rgba(24, 48, 69, 0.5);
