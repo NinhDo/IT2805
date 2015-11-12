@@ -368,6 +368,10 @@ BROWSE CSS
     padding: 0;
 }
 
+#searchBar input {
+    width: 95%;
+}
+
 #puppetInfo:hover #dropdown {
     display: block;
 }
