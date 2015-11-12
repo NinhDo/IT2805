@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     expandBoxFromDropdown();
 });
 
-function isExpandable() {
+function isExpandable(event) {
     if(event.target.classList.contains("puppetDiv") || event.target.parentNode.classList.contains("puppetDiv")) {
         expand();
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
