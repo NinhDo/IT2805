@@ -581,3 +581,7 @@ PUPPETS CSS
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+#strikethrough {
+    text-decoration: line-through;
+}
