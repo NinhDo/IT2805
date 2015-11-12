@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
 function isExpandable(event) {
     console.log(event);
     if(event.target.classList.contains("puppetDiv") || event.target.parentNode.classList.contains("puppetDiv")) {
-        expand();
+        expand(event);
     } else if (event.target.classList.contains("box") || event.target.parentNode.classList.contains("box")) {
-        expandBox();
+        expandBox(event);
     }
 }
 
