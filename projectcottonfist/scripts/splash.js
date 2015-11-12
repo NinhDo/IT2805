@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log(event);
     var date = new Date().getTime();
     var lastDateVisited = null;
     if(typeof (Storage) !== "undefined") {
