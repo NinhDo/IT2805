@@ -44,7 +44,7 @@ function expandBox(event) {
 function expandBoxFromDropdown() {
     try {
         var id = location.hash.slice(1);
-        var box = document.getElementById(id);
+        var box = document.getElementById(id).parentNode.parentNode.parentNode;
         if (box.classList.contains("box")) {
             setTimeout(function () {
                 box.children[0].classList.toggle("hidden");
@@ -52,5 +52,6 @@ function expandBoxFromDropdown() {
             box.classList.toggle("bigBox");
         }
     } catch (e) {
+        console.log(e);
     }
 }

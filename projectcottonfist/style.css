@@ -1,4 +1,4 @@
-/*
+﻿/*
 * FILE NAME: style.css
 * WRITTEN BY: Mathias Flått, Ninh Do, Nithun Manoharan
 * WHEN: November 2016
@@ -46,6 +46,7 @@ HEADER CSS
     left: 8%;
     width: auto;
     z-index: 11;
+    border: 0
 }
 
 #navbar {
