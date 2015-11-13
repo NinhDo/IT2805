@@ -73,8 +73,8 @@ PURPOSE: XML containing all of the information about the products currently avai
     </puppet>
     <puppet type="handPuppet">
         <id>HP0001</id>
-        <img>earnieHand.JPG</img>
-        <name>Earnie</name>
+        <img>ernieHand.JPG</img>
+        <name>Ernie</name>
         <size>Medium</size>
         <price>€99.85</price>
         <summary>
