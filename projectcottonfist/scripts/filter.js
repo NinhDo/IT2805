@@ -44,7 +44,7 @@ function search() {
     } else if (typesWanted.length != 0 && text.length != 0) {
         hideAll(content);
         for (i = 0; i < content.childElementCount; i++) {
-            if (typesWanted.indexOf(content.children[i].children[1].classList[1]) >= 0) {
+            if (typesWanted.indexOf(content.children[i].children[1].children[1].classList[1]) >= 0) {
                 for (x = 0; x < content.children[i].childElementCount; x++) {
                     if (content.children[i].children[x].innerHTML.toLowerCase().indexOf(text.toLowerCase()) >= 0) {
                         content.children[i].classList.toggle("hidden");
@@ -54,12 +54,11 @@ function search() {
             }
         }
     } else {
-        showAll();
+        showAll(content);
     }
 }
 
-function hideAll() {
-    var content = document.getElementById("content");
+function hideAll(content) {
     for (var i = 0; i < content.childElementCount; i++) {
         if (!content.children[i].classList.contains("hidden")) {
             content.children[i].classList.toggle("hidden");
@@ -67,8 +66,7 @@ function hideAll() {
     }
 }
 
-function showAll() {
-    var content = document.getElementById("content");
+function showAll(content) {
     for (var i = 0; i < content.childElementCount; i++) {
         if (content.children[i].classList.contains("hidden")) {
             content.children[i].classList.toggle("hidden");
