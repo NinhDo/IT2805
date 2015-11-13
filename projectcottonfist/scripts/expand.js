@@ -50,7 +50,7 @@ function expandBoxFromDropdown() {
                 box.children[0].classList.toggle("hidden");
             }, 300);
             box.classList.toggle("bigBox");
-            box.scrollIntoView();
+            box.scrollIntoView({block: "end", behaviour: "smooth"});
         }
     } catch (e) {
         console.log(e);
