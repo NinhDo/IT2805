@@ -26,8 +26,11 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Ballerina Nina</name>
         <size>Medium</size>
         <price>€130.5</price>
-        <summary>Ballerina marionette with glass fiber threading and wighted shoes</summary>
-        <description>Fits for all ages but most suited for girls, this ballerina will jump hop and skip into your heart
+        <summary>
+            Ballerina marionette with fiberglass threading and weighted shoes
+        </summary>
+        <description>
+            Fits for all ages but best suited for girls. This ballerina will jump, hop and skip into your heart
         </description>
     </puppet>
     <puppet type="rodPuppet">
@@ -36,9 +39,12 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Alien</name>
         <size>Small</size>
         <price>€75.90</price>
-        <summary>This is a sci-fi favourite and will dissolve all your reservations against puppets</summary>
-        <description>As seen in Alien, Aliens, Alien 3, Alien: Ressurection, Alien vs. Predator, Alien vs. Predator:
-            Requiem
+        <summary>
+            This is a sci-fi favourite and will dissolve all your reservations against puppets.
+        </summary>
+        <description>
+            As seen in the movies "Alien", "Aliens", "Alien 3", "Alien: Ressurection", "Alien vs. Predator", "Alien vs.
+            Predator: Requiem".
         </description>
     </puppet>
     <puppet type="rodPuppet">
@@ -47,8 +53,10 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Chutulu</name>
         <size>Gargantuan</size>
         <price>€199999.90</price>
-        <summary>The darklord, and great saviour of our current excistance!</summary>
-        <description>All hail Chutulu</description>
+        <summary>
+            The dark lord and great saviour of our current existence!
+        </summary>
+        <description>All hail Cthulhu</description>
     </puppet>
     <puppet type="shadowPuppet">
         <id>SP0001</id>
@@ -56,9 +64,12 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Jane &amp; James</name>
         <size>Medium</size>
         <price>€160.5</price>
-        <summary>How about some sexy shadow-play for your love before ending the night in some hot handpuppeteering?
+        <summary>
+            How about some sexy shadow-play for your love before ending the night in some hot puppeteering?
         </summary>
-        <description>Act out the story of two lovers in the shadows, using light.</description>
+        <description>
+            Act out the story of two lovers in the shadows, using light.
+        </description>
     </puppet>
     <puppet type="handPuppet">
         <id>HP0001</id>
@@ -66,8 +77,12 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Earnie</name>
         <size>Medium</size>
         <price>€99.85</price>
-        <summary>Something about him beeing suer famous from Sesame Street</summary>
-        <description>If you pay double amount his friend Alf may also join him in his journey.</description>
+        <summary>
+            Something about him being super famous from Sesame Street
+        </summary>
+        <description>
+            If you pay twice the price his friend Alf may also join him in his journey.
+        </description>
     </puppet>
     <puppet type="handPuppet">
         <id>HP0002</id>
@@ -75,8 +90,10 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Elmo!</name>
         <size>Medium</size>
         <price>€999.85</price>
-        <summary>Something about him beeing suer famous from Sesame Street</summary>
-        <description>This guy dosen't atleast eat your cookies</description>
+        <summary>
+            Something about him being super famous from Sesame Street
+        </summary>
+        <description>Atleast this guy doesn't eat your cookies</description>
     </puppet>
     <puppet type="animatronic">
         <id>AN0001</id>
@@ -85,8 +102,8 @@ PURPOSE: XML containing all of the information about the products currently avai
         <size>Huge</size>
         <price>€9999.85</price>
         <summary>This stranded alien is looking for a home</summary>
-        <description>NB! be careful of having your phone close to him or you may see some expensive long distance calls
-            on your bill.
+        <description>
+            PS! Be careful of lending him your phone or you may see some expensive long distance calls on your bill.
         </description>
     </puppet>
     <puppet type="animatronic">
@@ -96,7 +113,8 @@ PURPOSE: XML containing all of the information about the products currently avai
         <size>Medium</size>
         <price>€799.85</price>
         <summary>Look at this cute thing</summary>
-        <description>Don't feed them after midnight, don't give them water atleast.
+        <description>
+            Don't feed them after midnight and don't give them water.
         </description>
     </puppet>
     <puppet type="handPuppet">
@@ -105,11 +123,9 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Gobo</name>
         <size>Medium</size>
         <price>€800.85</price>
-        <summary>As seen in the TV-series Fraggle rock.</summary>
-        <description>Dance your cares away
-            Worry's for another day.
-            Let the music play,
-            Down at Fraggle Rock
+        <summary>As seen in the TV-series Fraggle Rock.</summary>
+        <description>
+            Dance your cares away. Worries for another day. And let the music play. Down at Fraggle Rock
         </description>
     </puppet>
     <puppet type="animatronic">
@@ -118,8 +134,11 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Gremllin - Not so Cute</name>
         <size>Huge</size>
         <price>€799.85</price>
-        <summary>WHAT HAVE YOU DONE, didn't you read the instructions!?</summary>
-        <description>If you ant to know how to beat it you need to watch the movie cuz i ain't no spoiler-bitch
+        <summary>
+            WHAT HAVE YOU DONE?? Didn't you read the instructions!?
+        </summary>
+        <description>
+            If you want to know how to beat it you need to watch the movie. (cuz i ain't no spoiler-bitch)
         </description>
     </puppet>
     <puppet type="marionette">
@@ -128,7 +147,9 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Michael Jackson</name>
         <size>Child size</size>
         <price>€9758.90</price>
-        <summary>How about a new friend for your child to play with?</summary>
+        <summary>
+            How about a new friend for your child to play with?
+        </summary>
         <description>I swear he didn't do anyt-hi-hi-ng wrong.</description>
     </puppet>
     <puppet type="marionette">
@@ -146,8 +167,12 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Sal the Seamonster</name>
         <size>Tiny</size>
         <price>€89.75</price>
-        <summary>Play with Sal in front of a lamp to scare your parents</summary>
-        <description>30% discount if you make a vine about it and uses the hashtag #SALISBEAST</description>
+        <summary>
+            Play with Sal in front of a lamp to scare your parents
+        </summary>
+        <description>
+            30% discount if you make a vine about it and use the hashtag #SALISBEAST
+        </description>
     </puppet>
     <puppet type="rodPuppet">
         <id>RP0003</id>
@@ -164,10 +189,26 @@ PURPOSE: XML containing all of the information about the products currently avai
         <name>Frank the Wolf</name>
         <size>Huge</size>
         <price>€1400.45</price>
-        <summary>This grandmother doll is adorable and should be given to all young girls with a red hood</summary>
-        <description>But, why are the ears so big?, It's so she can hear you better. Why are they eyes so big then?,
-            That is so she can see your child better. What about the biig teeth then?, Oh sorry that must be a
-            manufactory error, we will give you 10% discount
+        <summary>
+            This grandmother doll is adorable and should be given to all young girls with a red hood
+        </summary>
+        <description>
+            But, why are the ears so big? It's so she can hear you better. Why are the eyes so big then?, That is so she
+            can see your child better. What about the biig teeth then?, Oh sorry that must be a manufactory error, we
+            will give you 10% discount
+        </description>
+    </puppet>
+    <puppet type="ventriloquist">
+        <id>VE0001</id>
+        <img>lambchopVent.jpg</img>
+        <name>Lambchop</name>
+        <size>Small</size>
+        <price>€19.57</price>
+        <summary>
+            Lambchop was created by Shari Lewis and appeared for the first time in 1957.
+        </summary>
+        <description>
+            Lambchop is a 6-year old lamb with a foolhardy personality. To match the personality she is very vulnerable.
         </description>
     </puppet>
 </puppets>
