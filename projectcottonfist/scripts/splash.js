@@ -43,6 +43,7 @@ function draw() {
     ctx.lineTo(150, 100);
     ctx.stroke();
     ctx.closePath();
+    canvas.addEventListener("click", resize);
 }
 
 

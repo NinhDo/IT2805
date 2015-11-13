@@ -196,6 +196,7 @@ HEADER CSS
     left: 50%;
     bottom: 0;
     height: 200px;
+    cursor: pointer;
 }
 
 
