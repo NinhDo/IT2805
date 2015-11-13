@@ -39,8 +39,9 @@ function drawInitial() {
     ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 10;
     ctx.lineCap = "round";
+    ctx.strokeStyle = "rgb(34, 79, 120)";
     ctx.moveTo(canvas.width / 4, canvas.height / 3);
     ctx.lineTo(canvas.width / 2, canvas.height / 3 * 2);
     ctx.lineTo(canvas.width / 4 * 3, canvas.height / 3);
@@ -55,9 +56,8 @@ function draw() {
     ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
-    ctx.globalAlpha = (dy % canvas.height + 10) / canvas.height;
-    ctx.lineWidth = 2;
-    ctx.lineCap = "round";
+    ctx.strokeStyle = "rgb(34, 79, 120)";
+    ctx.globalAlpha = (dy % canvas.height + 10) / canvas.height * 2;
     ctx.moveTo(0, dy % canvas.height + 10);
     ctx.lineTo(canvas.width / 2, canvas.height / 5 * 2 + (dy % canvas.height + 10));
     ctx.lineTo(canvas.width, dy % canvas.height + 10);
