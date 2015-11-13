@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>P2 - Design</title>
+    <link href="/ninhqd/projectcottonfist/documents/p1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="wrapper">
+    <div id="baseInfo">
+        <h1>P3 Design Changes</h1>
+
+        <h2>Mathias, Ninh, og Nithun</h2>
+        <h5>November 13, 2015.</h5>
+    </div>
+    <div id="client">
+        <h3 class="subject">1. Client</h3>
+
+        <p class="subjectInfo">Client name and contact person: Dropphase Ltd, represented by Cottonfist, Gunnar<br/>Mr.
+            Cottonfist is the CEO and Manager of Dropphase Ltd, and wishes to transition his business from a telephone
+            service to an online service. Dropphase has been a local German company for many years, and now they wish to
+            expand to the global market using Mr. Cottonfists many years of experience from the German puppeteering
+            industry. Dropphase is a professional puppet rental service, providing puppets of any form and shape to any
+            purpose necessary.</p>
+    </div>
+    <div id="content">
+        <h3 class="subject">2. Changes</h3>
+
+        <p class="subjectInfo">
+            <strong>Navigation Structure</strong><br>We swapped the position of Browse and Puppet Info on the navigation
+            for estetical and practical reasons<br><br>
+            <strong>Color</strong><br>
+            We have now calmed our client and convinced him to agreed on <a
+                href="http://paletton.com/#uid=60K0-0koJv3lrVanAIFoInkmldu">this</a> color pallet.
+            <br><br>
+            <strong>Changes in Puppet Info</strong><br><br>
+            Links were changes to a submit button sending the correct parameter using GET method in form<br><br>
+            <strong>Changes in scripts</strong><br><br>
+            <strong>stitch.js</strong><br>
+            Due to the inefficiency of stitching using javascript we decided using php with the include function instead
+            <br><br><strong>filter.js</strong><br>
+            We decided to let the filter dynamicly hide the irrelevant products instead of refreshing the entire page.
+            <br><br><strong>expand.js</strong><br>
+            Instead of a close button we made it so the box will collapse with a clock on the expanded box
+            <br><br><strong>General Structure changes</strong><br><br>
+            To increase the efficiency of the stitching we changed the pages to php instead of html. The front page,
+            browse, and puppets have a special html-head to include the specific scripts they need. The other sites got
+            a general html-head that doesn't include a unique title because we felt it was redundant to create a special
+            html-head for each page.<br><br>
+            The header includes only the header element and the opening element to the wrapper. Similarly the footer
+            contains the footer element but also the closing element to the wrapper.<br><br>
+            The content of each pages is kept in a separate html file to be used in the corresponding php file.
+            <br><br>
+            Everything that is not a php file was either kept in the asset, images, or scripts folders, with the
+            exception of style.css. <br><br>
+            Images used by the fetch script were kept in a separate xmlImages folder inside the images folder.
+            <br><br>
+            sytlesheet.css was changed to style.css
+        </p>
+    </div>
+    <div id="plan">
+        <h3 class="subject">3. Updated Map structure</h3>
+
+        <p class="subjectInfo"><strong>Organizational Scheme</strong><br/>All of the files will be stored under the
+            folder projectcottonfist. Because we don’t have a private server, we will use the public server provided for
+            us by NTNU, specifically here: <a href="http://folk.ntnu.no/ninhqd/projectcottonfist/">http://folk.ntnu.no/ninhqd/projectcottonfist/</a><br/><br/>List
+            of files and folders</p>
+        <ul id="folderStructure">
+            <li>index.html</li>
+            <li>browse.html</li>
+            <li>puppets.html</li>
+            <li>support.html</li>
+            <li>faq.html</li>
+            <li>about.html</li>
+            <li>header.html</li>
+            <li>footer.html</li>
+            <li>productlisting.xml</li>
+            <li>images/
+                <ul>
+                    <li>xmlImages/</li>
+                    <li>companylogo.png</li>
+                    <li>companylogo.svg</li>
+                    <li>companylogowithslogan.png</li>
+                    <li>companylogowithslogan.svg</li>
+                    <li>companyslogan.png</li>
+                    <li>companyslogan.svg</li>
+                    <li>thumbnail_1.jpg</li>
+                    <li>thumbnail_2.jpg</li>
+                    <li>…</li>
+                    <li>thumbnail_x.jpg</li>
+                    <li>twitter.jpg</li>
+                    <li>facebook.jpg</li>
+                    <li>googleplus.jpg</li>
+                </ul>
+            </li>
+            <li>scripts/
+                <ul>
+                    <li>splash.js</li>
+                    <li>expand.js</li>
+                    <li>fetch.js</li>
+                    <li>filter.js</li>
+                </ul>
+            </li>
+            <li>stylesheet.css</li>
+        </ul>
+        <table id="changesTable">
+            <thead>
+            <tr>
+                <th colspan="4">Work divisions and changes from P2</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Filname</td>
+                <td>Description</td>
+                <td>In charge</td>
+                <td>Changes</td>
+            </tr>
+            <tr>
+                <td>index.html</td>
+                <td>Homepage</td>
+                <td>Ninh</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>browse.html</td>
+                <td>Puppet libary with search</td>
+                <td>Mathias</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>puppets.html</td>
+                <td>Info section about puppet types</td>
+                <td>Nithun</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>support.html</td>
+                <td>Support page</td>
+                <td>Mathias</td>
+                <td>Replaced Simen with Mathias</td>
+            </tr>
+            <tr>
+                <td>faq.html</td>
+                <td>FAQ page</td>
+                <td>Mathias</td>
+                <td>Replaced Simen with Mathias</td>
+            </tr>
+            <tr>
+                <td>about.html</td>
+                <td>About page</td>
+                <td>Mathias</td>
+                <td>Replaced Simen with Mathias</td>
+            </tr>
+            <tr>
+                <td>header.html</td>
+                <td>Universal header</td>
+                <td>Mathias</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>footer.html</td>
+                <td>Universal fotter</td>
+                <td>Nithun</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>productlisting.xml</td>
+                <td>XML with all info about puppets</td>
+                <td>Mathias</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>images</td>
+                <td>images</td>
+                <td>Ninh and Mathias</td>
+                <td>Mathias added</td>
+            </tr>
+            <tr>
+                <td>splash.js</td>
+                <td>Mainpage slpash script</td>
+                <td>Mathias and Ninh</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>stitch.js</td>
+                <td>Stitching header, content, and footer</td>
+                <td>Nithun and Ninh</td>
+                <td>Simen replaced with Ninh, Removed and replaced stitch.js with php</td>
+            </tr>
+            <tr>
+                <td>expand.js</td>
+                <td>Expands divs</td>
+                <td>Nithun and Simen</td>
+                <td>Removed Simen Ninh tookover</td>
+            </tr>
+            <tr>
+                <td>fetch.js</td>
+                <td>Fetching data from XML</td>
+                <td>Mathias and Ninh</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>filter.js</td>
+                <td>Filter search for browse.html</td>
+                <td>Mathias and Ninh</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>stylesheet.css</td>
+                <td>General css file</td>
+                <td>Everyone</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>finnshing_touch.coolstuff</td>
+                <td></td>
+                <td>Everyone</td>
+                <td>Nothing</td>
+            </tr>
+            <tr>
+                <td>about.php, browse.php, puppet.php, index.php, support.php, faq.php</td>
+                <td>Stitching main page with remote header and footer</td>
+                <td>Ninh</td>
+                <td>Replacing stitch.js</td>
+            </tr>
+            <tr>
+                <td>browseHead.html, frontpageHead.html, generalHead.html, puppetsHead.html</td>
+                <td>Unique head to make the correct scripts runt to the right page.</td>
+                <td>Ninh</td>
+                <td>Adding to complement common header/footer</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
