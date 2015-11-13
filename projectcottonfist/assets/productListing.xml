@@ -1,3 +1,10 @@
+<!--
+FILE NAME: productListing.xml
+WRITTEN BY: Mathias Flått
+WHEN: October/November 2016
+PURPOSE: XML containing all of the information about the products currently available. To be used by fetch.js
+-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE puppets [
         <!ELEMENT puppets (puppet)*>

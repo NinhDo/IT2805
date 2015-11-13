@@ -1,3 +1,11 @@
+/*
+ * FILE NAME: filter.js
+ * WRITTEN BY: Mathias Flått
+ * WHEN: October/November 2016
+ * PURPOSE: Search through the products and filter out the unwanted ones
+ * */
+
+
 addEventListener('DOMContentLoaded', function () {
     var url = document.location.href;
     try {

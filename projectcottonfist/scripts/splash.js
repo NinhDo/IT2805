@@ -1,3 +1,13 @@
+/*
+ * FILE NAME: splash.js
+ * WRITTEN BY: Ninh Do
+ * WHEN: October/November 2016
+ * PURPOSE: Detect when the visitor last visited and display a splash screen
+ * if the threshold was met (1 second for the purpose of this project)
+ * Makes the splash screen into the page's header and navbar after the user scrolls
+ * */
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var date = new Date().getTime();
     var lastDateVisited = null;

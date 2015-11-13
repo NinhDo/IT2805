@@ -1,3 +1,10 @@
+/*
+ * FILE NAME: fetch.js
+ * WRITTEN BY: Mathias Flått
+ * WHEN: October/November 2016
+ * PURPOSE: Fetch and scan the XML document productListing.xml and create a div for each product to view on the page
+ * */
+
 document.addEventListener("DOMContentLoaded", function() {
     loadXMLDoc();
 });

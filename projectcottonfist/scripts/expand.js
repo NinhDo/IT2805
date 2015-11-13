@@ -1,3 +1,10 @@
+/*
+ * FILE NAME: expand.js
+ * WRITTEN BY: Ninh Do and Nithun Manoharan
+ * WHEN: October/November 2016
+ * PURPOSE: Listen for clicks and run the appropriate expand function if the target is valid
+ * */
+
 document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("click", isExpandable);
     window.addEventListener("hashchange", expandBoxFromDropdown);
