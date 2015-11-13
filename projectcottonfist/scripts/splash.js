@@ -7,6 +7,9 @@
  * Makes the splash screen into the page's header and navbar after the user scrolls
  * */
 
+var canvas,
+    ctx,
+    dy = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     var date = new Date().getTime();
@@ -23,27 +26,44 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("wheel", resize);
-        draw();
+        drawInitial();
     }
 });
 
-function draw() {
+function drawInitial() {
     var header = document.getElementById("header");
     var cvs = document.createElement("canvas");
     cvs.id = "splashArrow";
     header.appendChild(cvs);
-    var canvas = document.getElementById("splashArrow");
-    var ctx = canvas.getContext("2d");
+    canvas = document.getElementById("splashArrow");
+    ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.beginPath();
     ctx.lineWidth = 2;
     ctx.lineCap = "round";
-    ctx.moveTo(50, 100);
-    ctx.lineTo(100, 125);
-    ctx.lineTo(150, 100);
+    ctx.moveTo(canvas.width / 4, canvas.height / 3);
+    ctx.lineTo(canvas.width / 2, canvas.height / 3 * 2);
+    ctx.lineTo(canvas.width / 4 * 3, canvas.height / 3);
     ctx.stroke();
     ctx.closePath();
     canvas.addEventListener("click", resize);
+    window.requestAnimationFrame(draw);
+}
+
+function draw() {
+    dy++;
+    ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.globalAlpha = (dy % canvas.height + 10) / canvas.height;
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.moveTo(0, dy % canvas.height + 10);
+    ctx.lineTo(canvas.width / 2, canvas.height / 5 * 2 + (dy % canvas.height + 10));
+    ctx.lineTo(canvas.width, dy % canvas.height + 10);
+    ctx.stroke();
+    ctx.closePath();
+    window.requestAnimationFrame(draw);
 }
 
 
@@ -63,6 +83,7 @@ function makeBig() {
 
 function resize() {
     document.removeEventListener("wheel", resize);
+    window.cancelAnimationFrame(draw());
 
     var html = document.getElementsByTagName("html");
     var header = document.getElementById("header");
