@@ -46,7 +46,14 @@ function search() {
         for (i = 0; i < content.childElementCount; i++) {
             if (typesWanted.indexOf(content.children[i].children[1].children[1].classList[1]) >= 0) {
                 for (x = 0; x < content.children[i].childElementCount; x++) {
-                    if (content.children[i].children[x].innerHTML.toLowerCase().indexOf(text.toLowerCase()) >= 0) {
+                    if (x == 1) {
+                        for (var y = 0; y < content.children[i].children[1].childElementCount; y++) {
+                            if (content.children[i].children[1].children[y].innerHTML.toLowerCase().indexOf(text.toLowerCase()) >= 0) {
+                                content.children[i].classList.toggle("hidden");
+                                break;
+                            }
+                        }
+                    } else if (content.children[i].children[x].innerHTML.toLowerCase().indexOf(text.toLowerCase()) >= 0) {
                         content.children[i].classList.toggle("hidden");
                         break;
                     }
