@@ -1,3 +1,4 @@
+<?php
 /*
 * FILE NAME: browse.php
 * WRITTEN BY: Ninh Do
@@ -5,8 +6,6 @@
 * PURPOSE: Include the correct files to display the page with puppet products
 * */
 
-
-<?php
 	include "./assets/browseHead.html";
 	include "./assets/header.html";
 	include "./assets/browse.html";
