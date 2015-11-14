@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     loadXMLDoc();
 });
 
+// Fetches the XML document and sends it to the next function if the file is ready
 function loadXMLDoc() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/ninhqd/projectcottonfist/assets/productListing.xml", true);
@@ -24,6 +25,8 @@ function loadXMLDoc() {
     xhr.send(null);
 }
 
+// Reads the XML file and creates the divs containing the information and puts it inside the content div
+// try catches are used in case the user uses ie that reads responseXML a bit different
 function readFile(xml) {
     var xmlDoc = xml.responseXML;
     var textFromXML="";
@@ -98,5 +101,7 @@ function readFile(xml) {
             "<button class=\"puppetButton\" type = \"button\" onclick=\"expand\">See more!</button></div>";
     }
     document.getElementById("content").innerHTML = textFromXML;
+    // Because this file is always accompanied by filter.js and is loaded later, it can call on the search function inside filter.js
+    // This is used in case the form submission from puppets.php was used and sent some parameters
     search();
 }

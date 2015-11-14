@@ -7,6 +7,8 @@
  * Makes the splash screen into the page's header and navbar after the user scrolls
  * */
 
+
+// Variables needed in drawInitial and draw
 var canvas,
     ctx,
     dy = 0;
@@ -14,12 +16,13 @@ var canvas,
 document.addEventListener("DOMContentLoaded", function() {
     var date = new Date().getTime();
     var lastDateVisited = null;
+    // Saves the current time locally
     if(typeof (Storage) !== "undefined") {
         if (localStorage.getItem("lastDateVisited") != null) {
             lastDateVisited = localStorage.getItem("lastDateVisited");
         }
     }
-
+    // Checks if the last time the site was visited is less than 1 second (for testing purposes. Obviously longer if not testing)
     if (lastDateVisited == null || date - lastDateVisited > 1000 || isNaN(lastDateVisited)) {
         if (localStorage !== undefined) {
             localStorage.setItem("lastDateVisited", date);
@@ -30,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+// Creates a canvas and draws an arrow on it. Then calls the draw function on the frame update
 function drawInitial() {
     var header = document.getElementById("header");
     var cvs = document.createElement("canvas");
@@ -42,6 +46,7 @@ function drawInitial() {
     ctx.lineWidth = 10;
     ctx.lineCap = "round";
     ctx.strokeStyle = "rgb(34, 79, 120)";
+    ctx.globalAlpha = 0;
     ctx.moveTo(canvas.width / 4, canvas.height / 3);
     ctx.lineTo(canvas.width / 2, canvas.height / 3 * 2);
     ctx.lineTo(canvas.width / 4 * 3, canvas.height / 3);
@@ -51,6 +56,8 @@ function drawInitial() {
     window.requestAnimationFrame(draw);
 }
 
+// Continues to draw the arrow, but animates it to increase the opacity and move it  downwards
+// Calls itself each frame
 function draw() {
     dy++;
     ctx = canvas.getContext("2d");
@@ -66,7 +73,7 @@ function draw() {
     window.requestAnimationFrame(draw);
 }
 
-
+// Makes the header big for the splash screen
 function makeBig() {
     var header = document.getElementById("header");
     var logo = document.getElementById("logo");
@@ -81,6 +88,7 @@ function makeBig() {
     footer.style.display = "none";
 }
 
+// Removes the wheel event listener and stops drawing. Sets the size of the header back to normal
 function resize() {
     document.removeEventListener("wheel", resize);
     window.cancelAnimationFrame(draw());
@@ -96,6 +104,8 @@ function resize() {
 
     html[0].style.position = "fixed";
 
+    // Allows the resizing to finish so the site can properly show
+    // the transition without cutting off the top part of the header
     setTimeout(function() {
         html[0].style.removeProperty("position");
     }, 1000);
