@@ -35,16 +35,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function keyScroll(event) {
-    switch (event) {
-        case event.key == "ArrowDown":
+    try {
+        if (event.key == "ArrowDown" || event.keyCode == 4 || event.keyIdentifier == "Down") {
             resize();
-            break;
-        case event.keyCode == 40:
-            resize();
-            break;
-        case event.keyIdentifier == "Down":
-            resize();
-            break;
+        }
+    } catch (e) {
+        console.log(e);
     }
 
 }
