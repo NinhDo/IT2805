@@ -559,7 +559,7 @@ PUPPETS CSS
     margin: auto;
     width: 100%;
     min-height: 420px;
-    user-select: none;
+    -ms-user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
 }
