@@ -35,10 +35,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function keyScroll(event) {
-    console.log(event);
-    if (event.key == "ArrowDown") {
-        resize();
+    switch (event) {
+        case event.key == "ArrowDown":
+            resize();
+            break;
+        case event.keyCode == 40:
+            resize();
+            break;
+        case event.keyIdentifier == "Down":
+            resize();
+            break;
     }
+
 }
 
 // Creates a canvas and draws an arrow on it. Then calls the draw function on the frame update
