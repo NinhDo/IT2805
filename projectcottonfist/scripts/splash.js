@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function keyScroll(event) {
-    console.log(event.key);
+    console.log(event);
     if (event.key == "ArrowDown") {
         resize();
     }
