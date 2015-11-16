@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("wheel", resize);
-        document.addEventListener("keydown", keyScroll);
+        window.addEventListener("keydown", keyScroll);
         drawInitial();
     }
 });
@@ -99,7 +99,7 @@ function makeBig() {
 // Removes the wheel event listener and stops drawing. Sets the size of the header back to normal
 function resize() {
     document.removeEventListener("wheel", resize);
-    document.removeEventListener("keypress", keyScroll);
+    window.removeEventListener("keypress", keyScroll);
     window.cancelAnimationFrame(draw());
 
     var html = document.getElementsByTagName("html");
