@@ -40,7 +40,6 @@ function keyScroll(event) {
             resize();
         }
     } catch (e) {
-        console.log(e);
     }
 
 }
