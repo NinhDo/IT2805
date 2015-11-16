@@ -29,9 +29,16 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("wheel", resize);
+        document.addEventListener("keypress", keyScroll);
         drawInitial();
     }
 });
+
+function keyScroll(event) {
+    if (event.key == "ArrowDown") {
+        resize();
+    }
+}
 
 // Creates a canvas and draws an arrow on it. Then calls the draw function on the frame update
 function drawInitial() {
@@ -91,6 +98,7 @@ function makeBig() {
 // Removes the wheel event listener and stops drawing. Sets the size of the header back to normal
 function resize() {
     document.removeEventListener("wheel", resize);
+    document.removeEventListener("keypress", keyScroll);
     window.cancelAnimationFrame(draw());
 
     var html = document.getElementsByTagName("html");
