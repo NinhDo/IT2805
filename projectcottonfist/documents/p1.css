@@ -44,7 +44,7 @@ body {
     border-collapse: collapse;
 }
 
-#pieImages {
-    width: 40%;
+.pieImages {
+    width: 45%;
     float: left;
 }
