@@ -29,12 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         makeBig();
         document.addEventListener("wheel", resize);
-        document.addEventListener("keypress", keyScroll);
+        document.addEventListener("keydown", keyScroll);
         drawInitial();
     }
 });
 
 function keyScroll(event) {
+    console.log(event.key);
     if (event.key == "ArrowDown") {
         resize();
     }
