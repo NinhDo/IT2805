@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+// Checks if the user pressed the down arrow key
 function keyScroll(event) {
     try {
         if (event.key == "ArrowDown" || event.keyCode == 4 || event.keyIdentifier == "Down") {
